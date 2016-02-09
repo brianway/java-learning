@@ -11,7 +11,7 @@
   - [反射基本使用](#反射基本使用)
   - [数组的反射](#数组的反射)
   - [配置文件加载](#配置文件加载)
-  -[内省(Instropector) & JavaBean](#内省instropector--javabean)
+  - [内省(Instropector) & JavaBean](#内省instropector--javabean)
 
 
 

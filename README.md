@@ -2,7 +2,7 @@
 
 笔记分为两大部分：javase和javaweb
 
-- [javase]((/javase)
+- [javase](/javase)
 - [javaweb](/javaweb)
 
 

@@ -9,11 +9,14 @@
 笔记内容主要是对一些基础特性和编程细节进行总结整理，适合了解java基础语法，想进一步深入学习的人
 
 **如果觉得不错，请先在这个仓库上点个star吧**，这也是对我的肯定和鼓励，谢谢了。
+
 不定时进行调整和补充，需要关注更新的请 Watch、Star、Fork
 
-如果你只是单纯要阅读的话，建议移步oschina上观看，访问速度快很多：
+如果你只是单纯要阅读的话，建议移步CSDN或者oschina上观看，访问速度快很多：
 
+>* [我的java&javaweb学习笔记(汇总)](http://blog.csdn.net/h3243212/article/details/50659471)
 >* [我的java&javaweb学习笔记(汇总)](http://my.oschina.net/brianway/blog/614355)
+
 
 -----
 

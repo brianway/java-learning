@@ -28,6 +28,7 @@
             <email>weichuyang@163.com</email>
         </developer>
     </developers>
+
     <scm>
         <connection>scm:git:git@github.com:brianway/java-learning.git</connection>
         <developerConnection>scm:git:git@github.com:brianway/java-learning.git</developerConnection>

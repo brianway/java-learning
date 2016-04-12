@@ -8,11 +8,6 @@
 
 不定时进行调整和补充，需要关注更新的请 Watch、Star、Fork
 
-如果你只是单纯要阅读的话，建议移步CSDN或者oschina上观看，访问速度快很多：
-
->* CSDN:[我的java&javaweb学习笔记(汇总)](http://blog.csdn.net/h3243212/article/details/50659471)
->* oschina:[我的java&javaweb学习笔记(汇总)](http://my.oschina.net/brianway/blog/614355)
-
 
 -----
 
@@ -25,6 +20,12 @@
 
 
 # 博客文档
+
+如果你只是单纯要阅读的话，建议移步CSDN或者oschina上观看，访问速度快很多：
+
+>* CSDN:[我的java&javaweb学习笔记(汇总)](http://blog.csdn.net/h3243212/article/details/50659471)
+>* oschina:[我的java&javaweb学习笔记(汇总)](http://my.oschina.net/brianway/blog/614355)
+
 
 **博客目录**
 

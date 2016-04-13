@@ -1,4 +1,4 @@
-package com.brianway.learning.java.multithread.synchronize.exmaple10;
+package com.brianway.learning.java.multithread.synchronize.example10;
 
 /**
  * Created by brian on 2016/4/13.

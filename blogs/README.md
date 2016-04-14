@@ -1,4 +1,12 @@
-# 博客目录
+# 博客
+
+如果你只是单纯要阅读的话，建议移步CSDN或者oschina上观看，访问速度快很多：
+
+>* CSDN:[我的java&javaweb学习笔记(汇总)](http://blog.csdn.net/h3243212/article/details/50659471)
+>* oschina:[我的java&javaweb学习笔记(汇总)](http://my.oschina.net/brianway/blog/614355)
+
+
+# 目录
 
 - [javase](/blogs/javase)
   - [java基础巩固笔记(1)-反射.md](/blogs/javase/java基础巩固笔记(1)-反射.md)

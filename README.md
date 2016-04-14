@@ -14,8 +14,8 @@
 # 仓库目录
 
 - [blogs](/blogs):博客文档
-- [java-base](/java-base):java基础巩固部分的模块
-- [java-multithread](/java-multithread):多线程模块
+- [java-base](/java-base):java基础巩固模块的java源码
+- [java-multithread](/java-multithread):多线程模块的java源码
 
 
 

@@ -23,7 +23,7 @@ public class Run3_singleton1 {
 
 /*
 输出:
-1802892302 com.brianway.learning.java.multithread.singleton.example3.MyObject1@65b21710
-1802892302 com.brianway.learning.java.multithread.singleton.example3.MyObject1@65b21710
-1802892302 com.brianway.learning.java.multithread.singleton.example3.MyObject1@65b21710
+418579292 com.brianway.learning.java.multithread.singleton.example3.MyObject1@18f3035c
+418579292 com.brianway.learning.java.multithread.singleton.example3.MyObject1@18f3035c
+418579292 com.brianway.learning.java.multithread.singleton.example3.MyObject1@18f3035c
  */

@@ -166,3 +166,83 @@
     - [Run10_ReadWriteLockBegin1.java](src/main/java/com/brianway/learning/java/multithread/lock/example10/Run10_ReadWriteLockBegin1.java):类 `ReentrantReadWriteLock` 的使用：读读共享
     - [Run10_ReadWriteLockBegin2.java](src/main/java/com/brianway/learning/java/multithread/lock/example10/Run10_ReadWriteLockBegin2.java):类 `ReentrantReadWriteLock` 的使用：写写互斥
     - [Run10_ReadWriteLockBegin3.java](src/main/java/com/brianway/learning/java/multithread/lock/example10/Run10_ReadWriteLockBegin3.java):类 `ReentrantReadWriteLock` 的使用：读写互斥
+
+
+## timer
+
+- [example1](src/main/java/com/brianway/learning/java/multithread/timer/example1):`schedule(TimerTask task, Date time)` 测试
+    - [Run1_timer1.java](src/main/java/com/brianway/learning/java/multithread/timer/example1/Run1_timer1.java):在未来执行的效果,Timer 的构造方法会新启一个线程，且非守护线程
+    - [Run1_timer2.java](src/main/java/com/brianway/learning/java/multithread/timer/example1/Run1_timer2.java):在未来执行的效果,Timer 的构造方法会新启一个守护线程,迅速结束，task任务未被执行
+    - [Run1_timer3.java](src/main/java/com/brianway/learning/java/multithread/timer/example1/Run1_timer3.java):提前运行的效果
+    - [Run1_timer4.java](src/main/java/com/brianway/learning/java/multithread/timer/example1/Run1_timer4.java):多个 TimerTask 任务及延时
+    - [Run1_timer5.java](src/main/java/com/brianway/learning/java/multithread/timer/example1/Run1_timer5.java):多个TimerTask任务及延时,队列的方式，一个一个被顺序执行，前面一个耗时长则后面的任务被延后
+- [example2](src/main/java/com/brianway/learning/java/multithread/timer/example2):`schedule(TimerTask task, long delay, long period)` 测试
+    - [Run2_period1.java](src/main/java/com/brianway/learning/java/multithread/timer/example2/Run2_period1.java):在未来执行的效果
+    - [Run2_period2.java](src/main/java/com/brianway/learning/java/multithread/timer/example2/Run2_period2.java):提前运行的效果
+    - [Run2_period3.java](src/main/java/com/brianway/learning/java/multithread/timer/example2/Run2_period3.java):任务执行时间被延时
+- [example3](src/main/java/com/brianway/learning/java/multithread/timer/example3)
+    - [Run3_cancel1.java](src/main/java/com/brianway/learning/java/multithread/timer/example3/Run3_cancel1.java):`TimerTask` 类的 `cancel()` 方法,将自身从任务队列移除，其他任务不受影响
+    - [Run3_cancel2.java](src/main/java/com/brianway/learning/java/multithread/timer/example3/Run3_cancel2.java):`Timer` 类的 `cancel()`方法,全部任务被清除，且进程被销毁
+    - [Run3_cancel3.java](src/main/java/com/brianway/learning/java/multithread/timer/example3/Run3_cancel3.java):`Timer` 类的 `cancel()`方法,有时不一定会停止计划任务
+- [example4](src/main/java/com/brianway/learning/java/multithread/timer/example4)
+    - [Run4_schedule1.java](src/main/java/com/brianway/learning/java/multithread/timer/example4/Run4_schedule1.java):`schedule(TimerTask task, long delay)` 方法
+    - [Run4_schedule2.java](src/main/java/com/brianway/learning/java/multithread/timer/example4/Run4_schedule2.java):`schedule(TimerTask task, long delay, long period)` 方法
+    - [Run4_schedule3.java](src/main/java/com/brianway/learning/java/multithread/timer/example4/Run4_schedule3.java):`schedule(TimerTask task, Date firstTime, long period)` 方法
+    - [Run4_schedule4.java](src/main/java/com/brianway/learning/java/multithread/timer/example4/Run4_schedule4.java):`schedule(TimerTask task, long delay, long period)` 方法
+    - [Run4_schedule5.java](src/main/java/com/brianway/learning/java/multithread/timer/example4/Run4_schedule5.java):`schedule(TimerTask task, Date firstTime, long period)` 方法
+    - [Run4_schedule6.java](src/main/java/com/brianway/learning/java/multithread/timer/example4/Run4_schedule6.java):`schedule(TimerTask task, long delay, long period)` 方法
+    - [Run4_schedule_vs_scheduleAtFixedRate_1.java](src/main/java/com/brianway/learning/java/multithread/timer/example4/Run4_schedule_vs_scheduleAtFixedRate_1.java):schedule 不具有追赶执行性
+    - [Run4_schedule_vs_scheduleAtFixedRate_2.java](src/main/java/com/brianway/learning/java/multithread/timer/example4/Run4_schedule_vs_scheduleAtFixedRate_2.java):scheduleAtFixedRate 具有追赶执行性
+    - [Run4_scheduleAtFixedRate1.java](src/main/java/com/brianway/learning/java/multithread/timer/example4/Run4_scheduleAtFixedRate1.java):`scheduleAtFixedRate(TimerTask task, Date firstTime,long period)` 方法
+    - [Run4_scheduleAtFixedRate2.java](src/main/java/com/brianway/learning/java/multithread/timer/example4/Run4_scheduleAtFixedRate2.java):`scheduleAtFixedRate(TimerTask task, long delay, long period)` 方法
+    - [Run4_scheduleAtFixedRate3.java](src/main/java/com/brianway/learning/java/multithread/timer/example4/Run4_scheduleAtFixedRate3.java):`scheduleAtFixedRate(TimerTask task, Date firstTime, long period)` 方法
+    - [Run4_scheduleAtFixedRate4.java](src/main/java/com/brianway/learning/java/multithread/timer/example4/Run4_scheduleAtFixedRate4.java):`scheduleAtFixedRate(TimerTask task, long delay, long period)` 方法
+
+
+## singleton
+
+
+- [example1](src/main/java/com/brianway/learning/java/multithread/singleton/example1)
+    - [Run1_singleton0.java](src/main/java/com/brianway/learning/java/multithread/singleton/example1/Run1_singleton0.java):立即加载/“饿汉模式”
+    - [Run1_singleton1.java](src/main/java/com/brianway/learning/java/multithread/singleton/example1/Run1_singleton1.java):延迟加载/“懒汉模式”(会出问题)
+    - [Run1_singleton2.java](src/main/java/com/brianway/learning/java/multithread/singleton/example1/Run1_singleton2.java):延迟加载/“懒汉模式”缺点展示
+- [example2](src/main/java/com/brianway/learning/java/multithread/singleton/example2):延迟加载/“懒汉模式”解决方案
+    - [Run2_singleton1.java](src/main/java/com/brianway/learning/java/multithread/singleton/example2/Run2_singleton1.java):声明 `synchronized` 关键字，整个方法上锁
+    - [Run2_singleton2.java](src/main/java/com/brianway/learning/java/multithread/singleton/example2/Run2_singleton2.java):声明 `synchronized` 关键字，同步代码块
+    - [Run2_singleton3.java](src/main/java/com/brianway/learning/java/multithread/singleton/example2/Run2_singleton3.java):声明 `synchronized` 关键字，部分代码上锁
+    - [Run2_singleton4.java](src/main/java/com/brianway/learning/java/multithread/singleton/example2/Run2_singleton4.java):DCL 双检查锁机制
+- [example3](src/main/java/com/brianway/learning/java/multithread/singleton/example3)
+    - [Run3_singleton1.java](src/main/java/com/brianway/learning/java/multithread/singleton/example3/Run3_singleton1.java):使用静态内置类实现单例模式
+    - [Run3_singleton2.java](src/main/java/com/brianway/learning/java/multithread/singleton/example3/Run3_singleton2.java):序列化与反序列化的单例模式实现
+    - [Run3_singleton3.java](src/main/java/com/brianway/learning/java/multithread/singleton/example3/Run3_singleton3.java):使用 `static` 代码块实现单例模式
+    - [Run3_singleton4.java](src/main/java/com/brianway/learning/java/multithread/singleton/example3/Run3_singleton4.java):使用 `enum` 枚举数据类型实现单例模式
+    - [Run3_singleton5.java](src/main/java/com/brianway/learning/java/multithread/singleton/example3/Run3_singleton5.java):使用 `enum` 枚举数据类型实现单例模式
+
+
+## supplement
+
+- [example1](src/main/java/com/brianway/learning/java/multithread/supplement/example1)
+    - [Run1_state1.java](src/main/java/com/brianway/learning/java/multithread/supplement/example1/Run1_state1.java):验证 `NEW,RUNNABLE`,`TERMINATED`
+    - [Run1_state2.java](src/main/java/com/brianway/learning/java/multithread/supplement/example1/Run1_state2.java):验证 `TIMED_WAITING`
+    - [Run1_state3.java](src/main/java/com/brianway/learning/java/multithread/supplement/example1/Run1_state3.java):验证 `BLOCKED`
+- [example2](src/main/java/com/brianway/learning/java/multithread/supplement/example2)
+    - [Run2_autoAddGroup.java](src/main/java/com/brianway/learning/java/multithread/supplement/example2/Run2_autoAddGroup.java):线程组自动归属特性
+    - [Run2_getGroupParent.java](src/main/java/com/brianway/learning/java/multithread/supplement/example2/Run2_getGroupParent.java):获取根线程组,JVM 根线程组就是 system
+    - [Run2_groupAddThread.java](src/main/java/com/brianway/learning/java/multithread/supplement/example2/Run2_groupAddThread.java)线程对象关联线程组，一级关联
+    - [Run2_groupAddThreadMoreLevel.java](src/main/java/com/brianway/learning/java/multithread/supplement/example2/Run2_groupAddThreadMoreLevel.java):线程对象关联线程组,多级关联
+    - [Run2_threadRunSyn.java](src/main/java/com/brianway/learning/java/multithread/supplement/example2/Run2_threadRunSyn.java):使线程具有有序性
+- [example3](src/main/java/com/brianway/learning/java/multithread/supplement/example3)
+    - [Run3_formatError.java](src/main/java/com/brianway/learning/java/multithread/supplement/example3/Run3_formatError.java):`SimpleDateFormat` 类非线程安全
+    - [Run3_formatOK1.java](src/main/java/com/brianway/learning/java/multithread/supplement/example3/Run3_formatOK1.java):`SimpleDateFormat` 类非线程安全，解决异常方法一
+    - [Run3_formatOK2.java](src/main/java/com/brianway/learning/java/multithread/supplement/example3/Run3_formatOK2.java):`SimpleDateFormat` 类非线程安全，解决异常方法二
+- [example4](src/main/java/com/brianway/learning/java/multithread/supplement/example4)
+    - [Run4_threadCreateException.java](src/main/java/com/brianway/learning/java/multithread/supplement/example4/Run4_threadCreateException.java):线程中出现异常
+    - [Run4_threadCreateException2.java](src/main/java/com/brianway/learning/java/multithread/supplement/example4/Run4_threadCreateException2.java):线程中出现异常，捕捉
+    - [Run4_threadCreateException3.java](src/main/java/com/brianway/learning/java/multithread/supplement/example4/Run4_threadCreateException3.java):线程中出现异常，捕捉
+- [example5](src/main/java/com/brianway/learning/java/multithread/supplement/example5)
+    - [Run5_threadGroup1.java](src/main/java/com/brianway/learning/java/multithread/supplement/example5/Run5_threadGroup1.java):线程组内处理异常
+    - [Run5_threadGroup2.java](src/main/java/com/brianway/learning/java/multithread/supplement/example5/Run5_threadGroup2.java):线程组内处理异常
+- [example6](src/main/java/com/brianway/learning/java/multithread/supplement/example6)
+    - [Run6_threadExceptionMove1.java](src/main/java/com/brianway/learning/java/multithread/supplement/example6/Run6_threadExceptionMove1.java)
+    - [Run6_threadExceptionMove2.java](src/main/java/com/brianway/learning/java/multithread/supplement/example6/Run6_threadExceptionMove2.java)
+   

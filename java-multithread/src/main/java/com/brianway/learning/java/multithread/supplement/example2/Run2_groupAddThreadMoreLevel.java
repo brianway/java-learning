@@ -6,7 +6,7 @@ package com.brianway.learning.java.multithread.supplement.example2;
 
 /**
  * P287
- * 线程对象关联线程组：多级关联
+ * 线程对象关联线程组,多级关联
  */
 public class Run2_groupAddThreadMoreLevel {
     public static void main(String[] args) {

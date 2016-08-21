@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 
 /**
  * P295
- * SimpleDateFormat类非线程安全，解决异常方法1
+ * SimpleDateFormat类非线程安全，解决异常方法一
  */
 public class Run3_formatOK1 {
     public static void main(String[] args) {

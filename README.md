@@ -73,7 +73,7 @@
 - [oschina](http://my.oschina.net/brianway)
 - [CSDN](http://blog.csdn.net/h3243212/)
 
-邮箱: weichuyang@163.com
+Email: weichuyang@163.com
 
 -----
 

@@ -7,7 +7,7 @@ package com.brianway.learning.java.multithread.synchronize.example8;
 /**
  * P76
  * 同步代码块解决同步方法的弊端
- * 但输出并不是两个c,两个d，原因？
+ * TODO 但输出并不是两个c,两个d，原因？
  */
 public class Run8_synchronized02 {
     public static void main(String[] args) {

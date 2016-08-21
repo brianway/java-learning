@@ -6,7 +6,7 @@ package com.brianway.learning.java.multithread.synchronize.example10;
 
 /**
  * P101
- * 验证同步sychronized(class)代码块的作用
+ * 验证同步synchronized(class)代码块的作用
  * 顺便验证了下static方法是不能复写的
  *
  * @see ServiceSub,ServiceSub2

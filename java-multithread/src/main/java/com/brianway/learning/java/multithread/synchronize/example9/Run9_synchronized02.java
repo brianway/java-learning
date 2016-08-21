@@ -9,7 +9,7 @@ package com.brianway.learning.java.multithread.synchronize.example9;
  * synchronized(非this对象x)的三个结论
  * 1）当多个线程同时执行synchronized(x){}同步代码块时呈现效果
  * 2）当其他线程执行x对象中synchronized同步方法时呈同步效果
- * 3）当其他线程执行x对象里面的ynchronized(this)代码块时，也呈现同步效果
+ * 3）当其他线程执行x对象里面的synchronized(this)代码块时，也呈现同步效果
  * 验证结论2：
  * 当其他线程执行x对象中synchronized同步方法时呈同步效果
  */

@@ -12,9 +12,9 @@ public class Run3_synchronized01 {
     public static void main(String[] args) {
         MyObject object = new MyObject();
         ThreadA a = new ThreadA(object);
-        a.setName("A");
+        a.setName("A ");
         ThreadB b = new ThreadB(object);
-        b.setName("B");
+        b.setName("B ");
         a.start();
         b.start();
     }
@@ -25,16 +25,16 @@ public void methodA()没加synchronized
 输出：
 begin methodA threadName=B
 begin methodA threadName=A
-A  end
-B  end
+A   end
+B   end
 
 -------------------
 
 public void methodA()加synchronized
 输出：
 begin methodA threadName=A
-A  end
+A   end
 begin methodA threadName=B
-B  end
+B   end
 
  */

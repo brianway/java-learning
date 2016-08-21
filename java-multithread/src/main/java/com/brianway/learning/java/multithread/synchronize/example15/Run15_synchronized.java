@@ -6,7 +6,7 @@ package com.brianway.learning.java.multithread.synchronize.example15;
 
 /**
  * P130
- * sychronized代码块有volatile同步的功能
+ * synchronized代码块有volatile同步的功能
  */
 public class Run15_synchronized {
     public static void main(String[] args) {

@@ -6,12 +6,6 @@ package com.brianway.learning.java.multithread.synchronize.example13;
  * P112
  * 内置类和同步测试1
  */
-
-/**
- * P112
- * 内置类和同步测试1
- */
-
 import com.brianway.learning.java.multithread.synchronize.example13.OutClass.Inner;
 
 public class Run13_inner01 {

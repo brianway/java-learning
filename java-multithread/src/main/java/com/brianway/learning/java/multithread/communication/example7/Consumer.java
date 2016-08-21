@@ -11,14 +11,14 @@ public class Consumer {
         this.lock = lock;
     }
 
-    public void getValue(){
+    public void getValue() {
         try {
-            synchronized (lock){
-                if(ValueObject.value.equals("")){
+            synchronized (lock) {
+                if (ValueObject.value.equals("")) {
                     lock.wait();
                 }
                 System.out.println("get的值是" + ValueObject.value);
-                ValueObject.value ="";
+                ValueObject.value = "";
                 lock.notify();
             }
         } catch (InterruptedException e) {

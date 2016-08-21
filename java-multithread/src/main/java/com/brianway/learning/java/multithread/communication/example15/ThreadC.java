@@ -1,13 +1,11 @@
 package com.brianway.learning.java.multithread.communication.example15;
 
-
-
 /**
  * Created by Brian on 2016/4/14.
  */
 public class ThreadC extends Thread {
 
-    private ThreadB b ;
+    private ThreadB b;
 
     public ThreadC(ThreadB b) {
         super();

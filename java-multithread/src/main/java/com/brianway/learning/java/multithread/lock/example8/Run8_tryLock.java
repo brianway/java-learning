@@ -12,7 +12,7 @@ package com.brianway.learning.java.multithread.lock.example8;
 public class Run8_tryLock {
     public static void main(String[] args) {
         final Service3 service = new Service3();
-        Runnable runnable =new Runnable() {
+        Runnable runnable = new Runnable() {
             public void run() {
                 service.waitMethod();
             }

@@ -13,18 +13,18 @@ import java.util.TimerTask;
  * schedule(TimerTask task, long delay, long period)方法
  */
 public class Run4_schedule2 {
-    static public class MyTask extends TimerTask{
+    static public class MyTask extends TimerTask {
         @Override
         public void run() {
-            System.out.println("运行了！时间为："+new Date());
+            System.out.println("运行了！时间为：" + new Date());
         }
     }
 
     public static void main(String[] args) {
         MyTask task = new MyTask();
         Timer timer = new Timer();
-        System.out.println("当前时间："+new Date());
-        timer.schedule(task,2000,1000);
+        System.out.println("当前时间：" + new Date());
+        timer.schedule(task, 2000, 1000);
     }
 }
 

@@ -10,7 +10,6 @@ package com.brianway.learning.java.multithread.communication.example10;
  *
  * while判断解决条件发生改变时没有得到及时的响应，多个呈wait状态的线程被唤醒的问题
  * 但会出现新的问题：假死
- *
  */
 public class Run10_oneP_manyC {
     public static void main(String[] args) {
@@ -20,20 +19,19 @@ public class Run10_oneP_manyC {
         P_Thread p_thread = new P_Thread(p);
         p_thread.start();
 
-
         int cNum = 5;
         Consumer[] consumers = new Consumer[cNum];
         C_Thread[] c_threads = new C_Thread[cNum];
 
-        for(int i=0;i<cNum;i++){
+        for (int i = 0; i < cNum; i++) {
             consumers[i] = new Consumer(myStack);
         }
 
-        for (int i=0;i<cNum;i++){
+        for (int i = 0; i < cNum; i++) {
             c_threads[i] = new C_Thread(consumers[i]);
         }
 
-        for (int i=0;i<cNum;i++){
+        for (int i = 0; i < cNum; i++) {
             c_threads[i].start();
         }
 

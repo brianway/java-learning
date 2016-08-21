@@ -4,13 +4,17 @@ package com.brianway.learning.java.multithread.singleton.example3;
  * Created by Brian on 2016/4/16.
  */
 
-
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
 /**
  * p273
  * 序列化与反序列化的单例模式实现
- *
  */
 public class Run3_singleton2 {
     public static void main(String[] args) {
@@ -21,10 +25,10 @@ public class Run3_singleton2 {
             oos.writeObject(myObject);
             oos.close();
             fos.close();
-            System.out.println(myObject.hashCode()+" "+ myObject);
+            System.out.println(myObject.hashCode() + " " + myObject);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
@@ -34,12 +38,12 @@ public class Run3_singleton2 {
             MyObject2 myObject = (MyObject2) ios.readObject();
             ios.close();
             fis.close();
-            System.out.println(myObject.hashCode()+" "+ myObject);
+            System.out.println(myObject.hashCode() + " " + myObject);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        } catch (IOException e ){
+        } catch (IOException e) {
             e.printStackTrace();
-        } catch (ClassNotFoundException e){
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }

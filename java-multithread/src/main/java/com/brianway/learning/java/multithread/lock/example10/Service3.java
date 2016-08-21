@@ -14,11 +14,11 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class Service3 {
     private ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
 
-    public void read(){
+    public void read() {
         try {
             try {
                 lock.readLock().lock();
-                System.out.println("获得读锁 "+ Thread.currentThread().getName()+" "+System.currentTimeMillis());
+                System.out.println("获得读锁 " + Thread.currentThread().getName() + " " + System.currentTimeMillis());
                 Thread.sleep(10000);
             } finally {
                 lock.readLock().unlock();
@@ -28,11 +28,11 @@ public class Service3 {
         }
     }
 
-    public void write(){
+    public void write() {
         try {
             try {
                 lock.writeLock().lock();
-                System.out.println("获得写锁 "+ Thread.currentThread().getName()+" "+System.currentTimeMillis());
+                System.out.println("获得写锁 " + Thread.currentThread().getName() + " " + System.currentTimeMillis());
                 Thread.sleep(10000);
             } finally {
                 lock.writeLock().unlock();

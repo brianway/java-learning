@@ -1,15 +1,14 @@
 package com.brianway.learning.java.multithread.singleton.example3;
 
-
-
 /**
  * Created by Brian on 2016/4/16.
  */
-public class MyObject5{
+public class MyObject5 {
     public enum MyEnumSingleton {
         ObjectFactory;
         private Object object;
-        private MyEnumSingleton(){
+
+        private MyEnumSingleton() {
             try {
                 Thread.sleep(3000);//模拟初始化
                 object = new Object();
@@ -18,12 +17,12 @@ public class MyObject5{
             }
         }
 
-        public Object getObject(){
+        public Object getObject() {
             return object;
         }
     }
 
-    public static Object getObject(){
+    public static Object getObject() {
         return MyEnumSingleton.ObjectFactory.getObject();
     }
 

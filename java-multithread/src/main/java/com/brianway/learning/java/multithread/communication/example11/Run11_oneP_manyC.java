@@ -17,20 +17,19 @@ public class Run11_oneP_manyC {
         P_Thread p_thread = new P_Thread(p);
         p_thread.start();
 
-
         int cNum = 5;
         Consumer[] consumers = new Consumer[cNum];
         C_Thread[] c_threads = new C_Thread[cNum];
 
-        for(int i=0;i<cNum;i++){
+        for (int i = 0; i < cNum; i++) {
             consumers[i] = new Consumer(myStack);
         }
 
-        for (int i=0;i<cNum;i++){
+        for (int i = 0; i < cNum; i++) {
             c_threads[i] = new C_Thread(consumers[i]);
         }
 
-        for (int i=0;i<cNum;i++){
+        for (int i = 0; i < cNum; i++) {
             c_threads[i].start();
         }
 

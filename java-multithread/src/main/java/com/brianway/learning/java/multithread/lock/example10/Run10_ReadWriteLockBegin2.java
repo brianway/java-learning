@@ -11,13 +11,13 @@ package com.brianway.learning.java.multithread.lock.example10;
 public class Run10_ReadWriteLockBegin2 {
     public static void main(String[] args) {
         final Service2 service = new Service2();
-        Thread a = new Thread(){
+        Thread a = new Thread() {
             @Override
             public void run() {
                 service.write();
             }
         };
-        Thread b = new Thread(){
+        Thread b = new Thread() {
             @Override
             public void run() {
                 service.write();

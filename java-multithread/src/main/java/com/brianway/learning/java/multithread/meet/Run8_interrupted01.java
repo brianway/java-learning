@@ -8,19 +8,18 @@ package com.brianway.learning.java.multithread.meet;
  * P25
  * 判断线程是否停止状态
  * 测试当前线程是否已经中断
- *
  */
-class MyThread8 extends Thread{
+class MyThread8 extends Thread {
     @Override
     public void run() {
         super.run();
-        for (int i =0;i<500;i++){
+        for (int i = 0; i < 500; i++) {
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("i="+(i+1));
+            System.out.println("i=" + (i + 1));
         }
     }
 }
@@ -32,8 +31,8 @@ public class Run8_interrupted01 {
             myThread8.start();
             Thread.sleep(1000);
             myThread8.interrupt();
-            System.out.println("Thread.interrupted()，是否停止1？="+Thread.interrupted());
-            System.out.println("Thread.interrupted()，是否停止2？="+Thread.interrupted());
+            System.out.println("Thread.interrupted()，是否停止1？=" + Thread.interrupted());
+            System.out.println("Thread.interrupted()，是否停止2？=" + Thread.interrupted());
         } catch (InterruptedException e) {
             System.out.println("main catch");
             e.printStackTrace();

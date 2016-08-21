@@ -1,7 +1,5 @@
 package com.brianway.learning.java.multithread.communication.example14;
 
-
-
 /**
  * Created by Brian on 2016/4/14.
  */
@@ -23,11 +21,11 @@ public class Run14_join {
 
     }
 
-    static class Run14_Thread  extends Thread{
+    static class Run14_Thread extends Thread {
         @Override
         public void run() {
             try {
-                int secondValue = (int) (Math.random()*10000);
+                int secondValue = (int) (Math.random() * 10000);
                 System.out.println(secondValue);
                 Thread.sleep(secondValue);
             } catch (InterruptedException e) {

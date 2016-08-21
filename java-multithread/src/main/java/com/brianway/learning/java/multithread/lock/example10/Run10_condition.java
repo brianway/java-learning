@@ -13,25 +13,26 @@ import java.util.concurrent.locks.ReentrantLock;
  * 这里nextPrintWho的volatile关键词去掉也没什么影响
  */
 public class Run10_condition {
-    volatile private static int nextPrintWho =1;
+    volatile private static int nextPrintWho = 1;
     private static ReentrantLock lock = new ReentrantLock();
     final private static Condition conditionA = lock.newCondition();
     final private static Condition conditionB = lock.newCondition();
     final private static Condition conditionC = lock.newCondition();
+
     public static void main(String[] args) {
-        Thread a = new Thread(){
+        Thread a = new Thread() {
             @Override
             public void run() {
                 try {
                     lock.lock();
-                    while (nextPrintWho != 1){
+                    while (nextPrintWho != 1) {
                         conditionA.await();
                     }
 
-                    for(int i=0;i<3;i++){
-                        System.out.println("ThreadA "+(i+1));
+                    for (int i = 0; i < 3; i++) {
+                        System.out.println("ThreadA " + (i + 1));
                     }
-                    nextPrintWho =2;
+                    nextPrintWho = 2;
                     conditionB.signalAll();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -41,18 +42,18 @@ public class Run10_condition {
             }
         };
 
-        Thread b = new Thread(){
+        Thread b = new Thread() {
             @Override
             public void run() {
                 try {
                     lock.lock();
-                    while (nextPrintWho != 2){
+                    while (nextPrintWho != 2) {
                         conditionB.await();
                     }
-                    for(int i=0;i<3;i++){
-                        System.out.println("ThreadB "+(i+1));
+                    for (int i = 0; i < 3; i++) {
+                        System.out.println("ThreadB " + (i + 1));
                     }
-                    nextPrintWho =3;
+                    nextPrintWho = 3;
                     conditionC.signalAll();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -62,18 +63,18 @@ public class Run10_condition {
             }
         };
 
-        Thread c = new Thread(){
+        Thread c = new Thread() {
             @Override
             public void run() {
                 try {
                     lock.lock();
-                    while (nextPrintWho != 3){
+                    while (nextPrintWho != 3) {
                         conditionC.await();
                     }
-                    for(int i=0;i<3;i++){
-                        System.out.println("ThreadC "+(i+1));
+                    for (int i = 0; i < 3; i++) {
+                        System.out.println("ThreadC " + (i + 1));
                     }
-                    nextPrintWho = 1 ;
+                    nextPrintWho = 1;
                     conditionA.signalAll();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -87,16 +88,15 @@ public class Run10_condition {
         Thread[] bArray = new Thread[5];
         Thread[] cArray = new Thread[5];
 
-        for (int i = 0;i<5;i++){
-            aArray[i] =new Thread(a);
-            bArray[i] =new Thread(b);
-            cArray[i] =new Thread(c);
+        for (int i = 0; i < 5; i++) {
+            aArray[i] = new Thread(a);
+            bArray[i] = new Thread(b);
+            cArray[i] = new Thread(c);
 
             aArray[i].start();
             bArray[i].start();
             cArray[i].start();
         }
-
 
     }
 }

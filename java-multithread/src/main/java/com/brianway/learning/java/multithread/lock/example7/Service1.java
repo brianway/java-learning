@@ -12,10 +12,10 @@ public class Service1 {
         lock = new ReentrantLock(isFair);
     }
 
-    public void serviceMethod(){
+    public void serviceMethod() {
         try {
             lock.lock();
-            System.out.println("公平锁情况："+lock.isFair());
+            System.out.println("公平锁情况：" + lock.isFair());
         } finally {
             lock.unlock();
         }

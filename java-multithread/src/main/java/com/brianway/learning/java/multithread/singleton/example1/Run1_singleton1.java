@@ -8,7 +8,6 @@ package com.brianway.learning.java.multithread.singleton.example1;
  * p264
  * 延迟加载/“懒汉模式”
  * 会出问题
- *
  */
 public class Run1_singleton1 {
     public static void main(String[] args) {

@@ -6,11 +6,11 @@ package com.brianway.learning.java.multithread.synchronize.example3;
 
 public class MyObject {
     synchronized
-    public void methodA(){
+    public void methodA() {
         try {
-            System.out.println("begin methodA threadName="+Thread.currentThread().getName());
+            System.out.println("begin methodA threadName=" + Thread.currentThread().getName());
             Thread.sleep(5000);
-            System.out.println(Thread.currentThread().getName()+"  end");
+            System.out.println(Thread.currentThread().getName() + "  end");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

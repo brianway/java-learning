@@ -4,7 +4,6 @@ package com.brianway.learning.java.multithread.lock.example1;
  * Created by brian on 2016/4/15.
  */
 
-
 /**
  * P206
  * 使用Condition实现等待通知

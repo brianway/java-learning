@@ -11,10 +11,10 @@ package com.brianway.learning.java.multithread.synchronize.example16;
 public class Run16_volatile {
     public static void main(String[] args) {
         MyThread[] myThreads = new MyThread[100];
-        for(int i=0;i<100;i++){
-            myThreads[i]= new MyThread();
+        for (int i = 0; i < 100; i++) {
+            myThreads[i] = new MyThread();
         }
-        for(int i=0;i<100;i++){
+        for (int i = 0; i < 100; i++) {
             myThreads[i].start();
         }
 

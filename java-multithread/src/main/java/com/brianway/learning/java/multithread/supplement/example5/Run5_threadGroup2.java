@@ -11,12 +11,12 @@ package com.brianway.learning.java.multithread.supplement.example5;
 public class Run5_threadGroup2 {
     public static void main(String[] args) {
         ThreadGroup2 group = new ThreadGroup2("Brian's group");
-        Thread2 []threads = new Thread2[10];
-        for(int i =0;i<threads.length;i++){
-            threads[i] = new Thread2(group,"线程"+(i+1),"1");
+        Thread2[] threads = new Thread2[10];
+        for (int i = 0; i < threads.length; i++) {
+            threads[i] = new Thread2(group, "线程" + (i + 1), "1");
             threads[i].start();
         }
-        Thread2 newT = new Thread2(group,"线程报错","a");
+        Thread2 newT = new Thread2(group, "线程报错", "a");
         newT.start();
     }
 }

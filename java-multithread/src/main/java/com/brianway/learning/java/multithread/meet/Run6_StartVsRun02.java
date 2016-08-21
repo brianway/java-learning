@@ -11,13 +11,13 @@ package com.brianway.learning.java.multithread.meet;
  * start---异步执行
  * 所以输出顺序有所不同
  */
-class MyThread6 extends Thread{
+class MyThread6 extends Thread {
     @Override
     public void run() {
         try {
-            System.out.println("run threadName="+ this.currentThread().getName()+ " begin");
+            System.out.println("run threadName=" + this.currentThread().getName() + " begin");
             Thread.sleep(2000);
-            System.out.println("run threadName="+ this.currentThread().getName()+ " end");
+            System.out.println("run threadName=" + this.currentThread().getName() + " end");
 
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -25,14 +25,13 @@ class MyThread6 extends Thread{
     }
 }
 
-
 public class Run6_StartVsRun02 {
     public static void main(String[] args) {
         MyThread6 myThread6 = new MyThread6();
-        System.out.println("begin = "+System.currentTimeMillis());
+        System.out.println("begin = " + System.currentTimeMillis());
         //myThread6.run();
         myThread6.start();
-        System.out.println("end = "+System.currentTimeMillis());
+        System.out.println("end = " + System.currentTimeMillis());
     }
 }
 

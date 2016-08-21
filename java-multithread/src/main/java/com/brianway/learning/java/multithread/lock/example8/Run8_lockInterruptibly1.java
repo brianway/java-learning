@@ -12,7 +12,7 @@ package com.brianway.learning.java.multithread.lock.example8;
 public class Run8_lockInterruptibly1 {
     public static void main(String[] args) throws InterruptedException {
         final Service1 service = new Service1();
-        Runnable runnable =new Runnable() {
+        Runnable runnable = new Runnable() {
             public void run() {
                 service.waitMethod();
             }

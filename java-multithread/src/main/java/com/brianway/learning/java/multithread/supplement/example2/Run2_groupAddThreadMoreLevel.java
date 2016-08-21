@@ -11,7 +11,7 @@ package com.brianway.learning.java.multithread.supplement.example2;
 public class Run2_groupAddThreadMoreLevel {
     public static void main(String[] args) {
         ThreadGroup mainGroup = Thread.currentThread().getThreadGroup();
-        ThreadGroup group = new ThreadGroup(mainGroup,"A");
+        ThreadGroup group = new ThreadGroup(mainGroup, "A");
         Runnable runnable = new Runnable() {
             public void run() {
                 try {
@@ -23,18 +23,16 @@ public class Run2_groupAddThreadMoreLevel {
             }
         };
 
-
-        Thread newThread = new Thread(group,runnable);
+        Thread newThread = new Thread(group, runnable);
         newThread.setName("z");
         newThread.start();//线程启动然后才归到组A
 
         ThreadGroup[] listGroup = new ThreadGroup[Thread.currentThread().getThreadGroup().activeGroupCount()];
         Thread.currentThread().getThreadGroup().enumerate(listGroup);
-        System.out.println("main线程中有多少个子线程组："+listGroup.length+" 名字为："+listGroup[0].getName());
+        System.out.println("main线程中有多少个子线程组：" + listGroup.length + " 名字为：" + listGroup[0].getName());
         Thread[] listThread = new Thread[listGroup[0].activeCount()];
         listGroup[0].enumerate(listThread);
         System.out.println(listThread[0].getName());
-
 
     }
 }

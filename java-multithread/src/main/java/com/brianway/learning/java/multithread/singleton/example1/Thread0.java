@@ -6,6 +6,6 @@ package com.brianway.learning.java.multithread.singleton.example1;
 public class Thread0 extends Thread {
     @Override
     public void run() {
-        System.out.println(MyObject0.getInstance().hashCode()+" "+MyObject0.getInstance());
+        System.out.println(MyObject0.getInstance().hashCode() + " " + MyObject0.getInstance());
     }
 }

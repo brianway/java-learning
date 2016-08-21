@@ -6,9 +6,9 @@ import java.util.TimerTask;
 /**
  * Created by brian on 2016/4/15.
  */
-public class TaskB extends TimerTask{
+public class TaskB extends TimerTask {
     @Override
     public void run() {
-        System.out.println("B run timer="+new Date());
+        System.out.println("B run timer=" + new Date());
     }
 }

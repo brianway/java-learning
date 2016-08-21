@@ -4,7 +4,6 @@ package com.brianway.learning.java.multithread.singleton.example2;
  * Created by Brian on 2016/4/16.
  */
 
-
 /**
  * p266
  * 延迟加载/“懒汉模式”解决方案

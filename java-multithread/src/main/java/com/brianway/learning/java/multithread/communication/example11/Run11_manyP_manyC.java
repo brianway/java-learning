@@ -4,14 +4,11 @@ package com.brianway.learning.java.multithread.communication.example11;
  * Created by Brian on 2016/4/14.
  */
 
-import com.brianway.learning.java.multithread.communication.example10.*;
-
 /**
  * P170
  * 多生产与多消费
  *
  * 一直运行下去
- *
  */
 public class Run11_manyP_manyC {
     public static void main(String[] args) {
@@ -21,11 +18,11 @@ public class Run11_manyP_manyC {
         Producer[] producers = new Producer[pNum];
         P_Thread[] p_threads = new P_Thread[pNum];
 
-        for(int i=0;i<pNum;i++){
+        for (int i = 0; i < pNum; i++) {
             producers[i] = new Producer(myStack);
         }
 
-        for (int i=0;i<pNum;i++){
+        for (int i = 0; i < pNum; i++) {
             p_threads[i] = new P_Thread(producers[i]);
             p_threads[i].start();
         }
@@ -34,11 +31,11 @@ public class Run11_manyP_manyC {
         Consumer[] consumers = new Consumer[cNum];
         C_Thread[] c_threads = new C_Thread[cNum];
 
-        for(int i=0;i<cNum;i++){
+        for (int i = 0; i < cNum; i++) {
             consumers[i] = new Consumer(myStack);
         }
 
-        for (int i=0;i<cNum;i++){
+        for (int i = 0; i < cNum; i++) {
             c_threads[i] = new C_Thread(consumers[i]);
             c_threads[i].start();
         }

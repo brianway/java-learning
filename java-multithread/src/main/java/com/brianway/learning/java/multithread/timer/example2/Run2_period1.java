@@ -1,8 +1,5 @@
 package com.brianway.learning.java.multithread.timer.example2;
 
-import com.brianway.learning.java.multithread.timer.example1.TaskA;
-import com.brianway.learning.java.multithread.timer.example1.TaskB;
-
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
@@ -17,15 +14,15 @@ import java.util.Timer;
  */
 public class Run2_period1 {
     public static void main(String[] args) {
-        System.out.println("当前时间为："+new Date());
+        System.out.println("当前时间为：" + new Date());
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.SECOND,10);
+        calendar.add(Calendar.SECOND, 10);
         Date runDate = calendar.getTime();
-        System.out.println("计划时间为："+ runDate);
+        System.out.println("计划时间为：" + runDate);
 
         MyTask task = new MyTask();
         Timer timer = new Timer();
-        timer.schedule(task,runDate,4000);
+        timer.schedule(task, runDate, 4000);
     }
 }
 

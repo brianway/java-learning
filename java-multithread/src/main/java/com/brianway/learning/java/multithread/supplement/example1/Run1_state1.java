@@ -12,11 +12,11 @@ public class Run1_state1 {
     public static void main(String[] args) {
         try {
             Thread1 t = new Thread1();
-            System.out.println("main方法中的状态1："+t.getState()+" of "+t.getName());
+            System.out.println("main方法中的状态1：" + t.getState() + " of " + t.getName());
             Thread.sleep(1000);
             t.start();
             Thread.sleep(1000);
-            System.out.println("main方法中的状态2："+t.getState()+" of "+t.getName());
+            System.out.println("main方法中的状态2：" + t.getState() + " of " + t.getName());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

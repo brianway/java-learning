@@ -12,7 +12,7 @@ public class Service2 {
         lock = new ReentrantLock(isFair);
     }
 
-    public void serviceMethod(){
+    public void serviceMethod() {
         try {
             System.out.println(lock.isHeldByCurrentThread());
             lock.lock();

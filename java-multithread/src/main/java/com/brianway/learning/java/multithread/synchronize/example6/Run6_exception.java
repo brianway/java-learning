@@ -13,10 +13,10 @@ public class Run6_exception {
 
         try {
             Service service = new Service();
-            ThreadA a = new ThreadA("a",service);
+            ThreadA a = new ThreadA("a", service);
             a.start();
             Thread.sleep(500);
-            ThreadB b = new ThreadB("b",service);
+            ThreadB b = new ThreadB("b", service);
             b.start();
         } catch (InterruptedException e) {
             e.printStackTrace();

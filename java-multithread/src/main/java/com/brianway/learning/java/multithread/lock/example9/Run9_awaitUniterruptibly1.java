@@ -4,8 +4,6 @@ package com.brianway.learning.java.multithread.lock.example9;
  * Created by Brian on 2016/4/15.
  */
 
-
-
 /**
  * P230
  * 测试方法awaitUniterruptibly()

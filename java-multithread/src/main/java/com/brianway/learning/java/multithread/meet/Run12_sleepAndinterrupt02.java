@@ -8,13 +8,13 @@ package com.brianway.learning.java.multithread.meet;
  * P31例子
  * 先interrupt(),再进入sleep(),直接进异常
  */
-class MyThread12 extends Thread{
+class MyThread12 extends Thread {
     @Override
     public void run() {
         super.run();
         try {
-            for(int i=0;i<100000;i++){
-                System.out.println("i="+(i+1));
+            for (int i = 0; i < 100000; i++) {
+                System.out.println("i=" + (i + 1));
             }
             System.out.println("run begin");
             Thread.sleep(200000);
@@ -28,7 +28,7 @@ class MyThread12 extends Thread{
 
 public class Run12_sleepAndinterrupt02 {
     public static void main(String[] args) {
-        MyThread12 myThread12 =new MyThread12();
+        MyThread12 myThread12 = new MyThread12();
         myThread12.start();
         myThread12.interrupt();
         System.out.println("end！");

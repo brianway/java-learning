@@ -16,17 +16,17 @@ public class Run14_joinLong {
             thread.start();
             thread.join(2000);//只等2秒
             //Thread.sleep(2000);
-            System.out.println("end timer="+System.currentTimeMillis());
+            System.out.println("end timer=" + System.currentTimeMillis());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-    static class Run14_Thread extends Thread{
+    static class Run14_Thread extends Thread {
         @Override
         public void run() {
             try {
-                System.out.println("begin timer="+System.currentTimeMillis());
+                System.out.println("begin timer=" + System.currentTimeMillis());
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();

@@ -12,7 +12,7 @@ package com.brianway.learning.java.multithread.lock.example6;
 public class Run6_hasWaiters {
     public static void main(String[] args) throws InterruptedException {
         final Service2 service = new Service2();
-        Runnable runnable =new Runnable() {
+        Runnable runnable = new Runnable() {
             public void run() {
                 service.waitMethod();
             }
@@ -20,11 +20,11 @@ public class Run6_hasWaiters {
 
         Thread[] threads = new Thread[10];
 
-        for (int i=0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             threads[i] = new Thread(runnable);
         }
 
-        for (int i=0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             threads[i].start();
         }
 

@@ -5,7 +5,7 @@ import java.io.PipedOutputStream;
 /**
  * Created by Brian on 2016/4/14.
  */
-public class ThreadWrite extends Thread{
+public class ThreadWrite extends Thread {
     private WriteData write;
     private PipedOutputStream out;
 

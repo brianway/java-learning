@@ -9,8 +9,9 @@ package com.brianway.learning.java.multithread.meet;
  * 暂停线程
  * suspend与resume
  */
-class MyThread13 extends Thread{
+class MyThread13 extends Thread {
     private long i = 0;
+
     public long getI() {
         return i;
     }
@@ -21,7 +22,7 @@ class MyThread13 extends Thread{
 
     @Override
     public void run() {
-        while(true){
+        while (true) {
             i++;
         }
     }
@@ -35,19 +36,18 @@ public class Run13_suspendAndresume01 {
             Thread.sleep(5000);
             //A段
             myThread13.suspend();
-            System.out.println("A= "+System.currentTimeMillis()+" i="+myThread13.getI());
+            System.out.println("A= " + System.currentTimeMillis() + " i=" + myThread13.getI());
             Thread.sleep(5000);
-            System.out.println("A= "+System.currentTimeMillis()+" i="+myThread13.getI());
+            System.out.println("A= " + System.currentTimeMillis() + " i=" + myThread13.getI());
 
             //B段
             myThread13.resume();
             Thread.sleep(5000);
             //C段
             myThread13.suspend();
-            System.out.println("B= "+System.currentTimeMillis()+" i="+myThread13.getI());
+            System.out.println("B= " + System.currentTimeMillis() + " i=" + myThread13.getI());
             Thread.sleep(5000);
-            System.out.println("B= "+System.currentTimeMillis()+" i="+myThread13.getI());
-
+            System.out.println("B= " + System.currentTimeMillis() + " i=" + myThread13.getI());
 
         } catch (InterruptedException e) {
             e.printStackTrace();

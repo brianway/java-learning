@@ -9,16 +9,16 @@ package com.brianway.learning.java.multithread.synchronize.example14;
  * 锁对象改变
  */
 public class Run14_setNewStringTwoLock {
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException {
         final Service service = new Service();
-        Thread a = new Thread(){
+        Thread a = new Thread() {
             @Override
             public void run() {
                 service.testMethod();
             }
         };
         a.setName("A");
-        Thread b = new Thread(){
+        Thread b = new Thread() {
             @Override
             public void run() {
                 service.testMethod();

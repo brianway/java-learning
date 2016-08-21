@@ -10,7 +10,6 @@ package com.brianway.learning.java.multithread.communication.example9;
  *
  * if判断存在弊端，条件发生改变时没有得到及时的响应，多个呈wait状态的线程被唤醒
  * 继而执行list.remove(0)出现异常java.lang.IndexOutOfBoundsException
- *
  */
 public class Run9_oneP_manyC {
     public static void main(String[] args) {
@@ -30,7 +29,6 @@ public class Run9_oneP_manyC {
         C_Thread c_thread3 = new C_Thread(c3);
         C_Thread c_thread4 = new C_Thread(c4);
         C_Thread c_thread5 = new C_Thread(c5);
-
 
         c_thread1.start();
         c_thread2.start();

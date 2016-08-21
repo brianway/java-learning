@@ -9,10 +9,10 @@ package com.brianway.learning.java.multithread.meet;
  * suspend与resume的缺点：独占
  */
 
-class SynchronizedObject{
-    synchronized public void printString(){
+class SynchronizedObject {
+    synchronized public void printString() {
         System.out.println("begin printString");
-        if(Thread.currentThread().getName().equals("a")){
+        if (Thread.currentThread().getName().equals("a")) {
             System.out.println("a线程永远suspend了！");
             Thread.currentThread().suspend();
         }
@@ -23,8 +23,8 @@ class SynchronizedObject{
 public class Run14_suspendAndresume02 {
     public static void main(String[] args) {
         try {
-            final  SynchronizedObject object = new SynchronizedObject();
-            Thread thread1 =new Thread(){
+            final SynchronizedObject object = new SynchronizedObject();
+            Thread thread1 = new Thread() {
                 @Override
                 public void run() {
                     object.printString();
@@ -34,7 +34,7 @@ public class Run14_suspendAndresume02 {
             thread1.start();
             Thread.sleep(1000);
 
-            Thread thread2 =new Thread(){
+            Thread thread2 = new Thread() {
                 @Override
                 public void run() {
                     System.out.println("thread2启动了，但进不了printString()方法！只打印一个begin");

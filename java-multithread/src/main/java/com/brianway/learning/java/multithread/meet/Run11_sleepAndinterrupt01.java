@@ -8,7 +8,7 @@ package com.brianway.learning.java.multithread.meet;
  * P30
  * 睡眠中停止，先进入的sleep,再interrupt()
  */
-class  MyThread11 extends Thread{
+class MyThread11 extends Thread {
     @Override
     public void run() {
         super.run();
@@ -18,7 +18,7 @@ class  MyThread11 extends Thread{
             Thread.sleep(20000);
             System.out.println("run end");
         } catch (InterruptedException e) {
-            System.out.println("沉睡中被停止！进入catch!"+this.isInterrupted());
+            System.out.println("沉睡中被停止！进入catch!" + this.isInterrupted());
             e.printStackTrace();
         }
     }
@@ -27,7 +27,7 @@ class  MyThread11 extends Thread{
 public class Run11_sleepAndinterrupt01 {
     public static void main(String[] args) {
         try {
-            MyThread11 myThread11 =new MyThread11();
+            MyThread11 myThread11 = new MyThread11();
             myThread11.start();
             Thread.sleep(200);
             myThread11.interrupt();

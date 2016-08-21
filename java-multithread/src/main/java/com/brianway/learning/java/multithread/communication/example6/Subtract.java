@@ -11,14 +11,14 @@ public class Subtract {
         this.lock = lock;
     }
 
-    public void subtract(){
+    public void subtract() {
         try {
-            synchronized (lock){
+            synchronized (lock) {
                 //while(ValueObject.list.size() == 0){
-                if(ValueObject.list.size() == 0){
-                    System.out.println("begin wait(),ThreadName="+Thread.currentThread().getName());
+                if (ValueObject.list.size() == 0) {
+                    System.out.println("begin wait(),ThreadName=" + Thread.currentThread().getName());
                     lock.wait();
-                    System.out.println("end wait(),  ThreadName="+Thread.currentThread().getName());
+                    System.out.println("end wait(),  ThreadName=" + Thread.currentThread().getName());
                 }
                 ValueObject.list.remove(0);
                 System.out.println("list size = " + ValueObject.list.size());

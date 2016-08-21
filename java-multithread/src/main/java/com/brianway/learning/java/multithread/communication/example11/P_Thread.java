@@ -3,7 +3,7 @@ package com.brianway.learning.java.multithread.communication.example11;
 /**
  * Created by Brian on 2016/4/14.
  */
-public class P_Thread extends Thread{
+public class P_Thread extends Thread {
     private Producer p;
 
     public P_Thread(Producer p) {
@@ -13,7 +13,7 @@ public class P_Thread extends Thread{
 
     @Override
     public void run() {
-        while (true){
+        while (true) {
             p.pushService();
         }
     }

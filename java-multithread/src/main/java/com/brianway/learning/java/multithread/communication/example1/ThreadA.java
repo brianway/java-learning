@@ -13,9 +13,9 @@ public class ThreadA extends Thread {
 
     @Override
     public void run() {
-        for(int i = 0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             list.add();
-            System.out.println("添加了"+(i+1)+"元素");
+            System.out.println("添加了" + (i + 1) + "元素");
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {

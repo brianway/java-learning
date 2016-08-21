@@ -2,6 +2,12 @@ package com.brianway.learning.java.multithread.synchronize.example13;
 
 /**
  * Created by Brian on 2016/4/13.
+ *
+ * P112
+ * 内置类与同步测试2
+ *
+ * T1和T3竞争in2的锁。只有T1结束，T3才能开始；或者T3结束，T1才能开始
+ * T2与另外两个没关系，因为其锁对象是in2
  */
 
 /**
@@ -15,7 +21,6 @@ package com.brianway.learning.java.multithread.synchronize.example13;
 import com.brianway.learning.java.multithread.synchronize.example13.OutClass2.InnerClass1;
 import com.brianway.learning.java.multithread.synchronize.example13.OutClass2.InnerClass2;
 
-
 public class Run13_inner02 {
     public static void main(String[] args) {
         final InnerClass1 in1 = new InnerClass1();
@@ -24,19 +29,19 @@ public class Run13_inner02 {
             public void run() {
                 in1.method1(in2);
             }
-        },"T1");
+        }, "T1");
 
-        Thread t2 = new  Thread(new Runnable() {
+        Thread t2 = new Thread(new Runnable() {
             public void run() {
                 in1.method2();
             }
-        },"T2");
+        }, "T2");
 
-        Thread t3 = new  Thread(new Runnable() {
+        Thread t3 = new Thread(new Runnable() {
             public void run() {
                 in2.method1();
             }
-        },"T3");
+        }, "T3");
 
         t1.start();
         t2.start();

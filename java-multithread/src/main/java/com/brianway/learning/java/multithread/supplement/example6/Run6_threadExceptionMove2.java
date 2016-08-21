@@ -6,13 +6,12 @@ package com.brianway.learning.java.multithread.supplement.example6;
 
 /**
  * P304
- *
  */
 public class Run6_threadExceptionMove2 {
     public static void main(String[] args) {
         MyThreadGroup group = new MyThreadGroup("我的线程组");
 
-        MyThread myThread = new MyThread(group,"我的线程");
+        MyThread myThread = new MyThread(group, "我的线程");
         //对象
         //myThread.setUncaughtExceptionHandler(new ObjectUncaughtExceptionHandler());
         //类

@@ -2,27 +2,31 @@ package com.brianway.learning.java.multithread.synchronize.example13;
 
 /**
  * Created by Brian on 2016/4/13.
+ *
+ * P112
+ * 内置类和同步测试1
  */
-
 
 /**
  * P112
  * 内置类和同步测试1
  */
+
 import com.brianway.learning.java.multithread.synchronize.example13.OutClass.Inner;
+
 public class Run13_inner01 {
     public static void main(String[] args) {
         final Inner inner = new Inner();
         Thread t1 = new Thread(new Runnable() {
-           public void run() {
-               inner.method1();
-           }
-        },"A");
+            public void run() {
+                inner.method1();
+            }
+        }, "A");
         Thread t2 = new Thread(new Runnable() {
             public void run() {
                 inner.method2();
             }
-        },"B");
+        }, "B");
         t1.start();
         t2.start();
     }

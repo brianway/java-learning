@@ -12,7 +12,7 @@ package com.brianway.learning.java.multithread.lock.example7;
 public class Run7_isHeldByCurrentThread {
     public static void main(String[] args) {
         final Service2 service = new Service2(true);
-        Runnable runnable =new Runnable() {
+        Runnable runnable = new Runnable() {
             public void run() {
                 service.serviceMethod();
             }

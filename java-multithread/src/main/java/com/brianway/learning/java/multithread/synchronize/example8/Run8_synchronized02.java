@@ -12,11 +12,11 @@ package com.brianway.learning.java.multithread.synchronize.example8;
 public class Run8_synchronized02 {
     public static void main(String[] args) {
         TaskB taskB = new TaskB();
-        MyThreadB thread1 =new MyThreadB(taskB);
+        MyThreadB thread1 = new MyThreadB(taskB);
         thread1.setName("c");
         thread1.start();
 
-        MyThreadB thread2 =new MyThreadB(taskB);
+        MyThreadB thread2 = new MyThreadB(taskB);
         thread2.setName("d");
         thread2.start();
 
@@ -26,9 +26,9 @@ public class Run8_synchronized02 {
             e.printStackTrace();
         }
 
-        long beginTime  = CommonUtils.beginTime2<CommonUtils.beginTime1?CommonUtils.beginTime2:CommonUtils.beginTime1;
-        long endTime = CommonUtils.endTime1>CommonUtils.endTime2?CommonUtils.endTime1:CommonUtils.endTime2;
-        System.out.println("耗时："+(endTime-beginTime)/1000);
+        long beginTime = CommonUtils.beginTime2 < CommonUtils.beginTime1 ? CommonUtils.beginTime2 : CommonUtils.beginTime1;
+        long endTime = CommonUtils.endTime1 > CommonUtils.endTime2 ? CommonUtils.endTime1 : CommonUtils.endTime2;
+        System.out.println("耗时：" + (endTime - beginTime) / 1000);
     }
 
 }

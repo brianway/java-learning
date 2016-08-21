@@ -10,7 +10,7 @@ package com.brianway.learning.java.multithread.synchronize.example5;
  */
 public class Run5_lockRein {
     public static void main(String[] args) {
-        Thread t = new Thread(){
+        Thread t = new Thread() {
             @Override
             public void run() {
                 Sub sub = new Sub();

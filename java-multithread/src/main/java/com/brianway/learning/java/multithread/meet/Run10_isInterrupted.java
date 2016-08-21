@@ -16,8 +16,8 @@ public class Run10_isInterrupted {
             myThread7.start();
             Thread.sleep(100);
             myThread7.interrupt();
-            System.out.println("Thread.interrupted()，是否停止1？="+myThread7.isInterrupted());
-            System.out.println("Thread.interrupted()，是否停止2？="+myThread7.isInterrupted());
+            System.out.println("Thread.interrupted()，是否停止1？=" + myThread7.isInterrupted());
+            System.out.println("Thread.interrupted()，是否停止2？=" + myThread7.isInterrupted());
         } catch (InterruptedException e) {
             System.out.println("main catch");
             e.printStackTrace();

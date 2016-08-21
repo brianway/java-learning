@@ -11,7 +11,7 @@ package com.brianway.learning.java.multithread.synchronize.example11;
 public class Run11_StringAndSyn2 {
     public static void main(String[] args) {
         ServiceB serviceB = new ServiceB();
-        ThreadB a =new ThreadB(serviceB);
+        ThreadB a = new ThreadB(serviceB);
         a.setName("A");
         a.start();
         ThreadB b = new ThreadB(serviceB);

@@ -18,7 +18,7 @@ public class Run1_state3 {
             t2.setName("b");
             t2.start();
             Thread.sleep(1000);
-            System.out.println("main方法中的t2状态："+t2.getState());
+            System.out.println("main方法中的t2状态：" + t2.getState());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

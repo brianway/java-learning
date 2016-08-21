@@ -7,19 +7,17 @@ package com.brianway.learning.java.multithread.meet;
 /**
  * P23
  * 停止线程
- *
  */
 
-class  MyThread7 extends Thread{
+class MyThread7 extends Thread {
     @Override
     public void run() {
         super.run();
-        for (int i =0;i<500000;i++){
-            System.out.println("i="+(i+1));
+        for (int i = 0; i < 500000; i++) {
+            System.out.println("i=" + (i + 1));
         }
     }
 }
-
 
 public class Run7_interrupt01 {
     public static void main(String[] args) {

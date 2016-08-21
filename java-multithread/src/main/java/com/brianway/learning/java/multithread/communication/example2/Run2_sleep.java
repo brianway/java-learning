@@ -8,41 +8,40 @@ package com.brianway.learning.java.multithread.communication.example2;
  * P142
  * 测试sleep()期间其他线程是否执行
  * 处理器资源，对象锁，是不同的概念
- *
  */
 public class Run2_sleep {
     public static void main(String[] args) {
-        Thread t1 =new Thread(){
+        Thread t1 = new Thread() {
             @Override
             public void run() {
                 super.run();
-                System.out.println(Thread.currentThread().getName()+" begin sleep");
+                System.out.println(Thread.currentThread().getName() + " begin sleep");
                 try {
                     Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println(Thread.currentThread().getName()+" end sleep");
+                System.out.println(Thread.currentThread().getName() + " end sleep");
             }
         };
         t1.setName("t1");
 
-        Thread t2 = new Thread(){
+        Thread t2 = new Thread() {
             @Override
             public void run() {
                 super.run();
-                long i =0;
-                long max = (long)Integer.MAX_VALUE;
-                System.out.println("max = "+max);
+                long i = 0;
+                long max = (long) Integer.MAX_VALUE;
+                System.out.println("max = " + max);
 
-                System.out.println(Thread.currentThread().getName()+" begin while");
-                while(i<max){
+                System.out.println(Thread.currentThread().getName() + " begin while");
+                while (i < max) {
                     i++;
-                    if(i%100000000==0){
-                        System.out.println(Thread.currentThread().getName()+" now is "+i);
+                    if (i % 100000000 == 0) {
+                        System.out.println(Thread.currentThread().getName() + " now is " + i);
                     }
                 }
-                System.out.println(Thread.currentThread().getName()+" end while");
+                System.out.println(Thread.currentThread().getName() + " end while");
             }
         };
         t2.setName("t2");

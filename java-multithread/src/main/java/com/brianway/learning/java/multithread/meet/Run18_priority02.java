@@ -11,16 +11,16 @@ import java.util.Random;
  * 优先级具有规则性
  */
 
-class MyThread18_1 extends Thread{
+class MyThread18_1 extends Thread {
     @Override
     public void run() {
         long beginTime = System.currentTimeMillis();
-        long addResult =0;
-        for (int j=0;j<10;j++){
-            for (int i=0;i<50000;i++){
+        long addResult = 0;
+        for (int j = 0; j < 10; j++) {
+            for (int i = 0; i < 50000; i++) {
                 Random random = new Random();
                 random.nextInt();
-                addResult +=  i;
+                addResult += i;
             }
         }
         long endTime = System.currentTimeMillis();
@@ -28,14 +28,13 @@ class MyThread18_1 extends Thread{
     }
 }
 
-
-class MyThread18_2 extends Thread{
+class MyThread18_2 extends Thread {
     @Override
     public void run() {
         long beginTime = System.currentTimeMillis();
-        long addResult =0;
-        for (int j=0;j<10;j++){
-            for (int i=0;i<50000;i++){
+        long addResult = 0;
+        for (int j = 0; j < 10; j++) {
+            for (int i = 0; i < 50000; i++) {
                 Random random = new Random();
                 random.nextInt();
                 addResult += i;
@@ -48,12 +47,12 @@ class MyThread18_2 extends Thread{
 
 public class Run18_priority02 {
     public static void main(String[] args) {
-        for (int i=0;i<5;i++){
-            MyThread18_1 myThread18_1 =new MyThread18_1();
+        for (int i = 0; i < 5; i++) {
+            MyThread18_1 myThread18_1 = new MyThread18_1();
             myThread18_1.setPriority(10);
             //myThread18_1.setPriority(1);
             myThread18_1.start();
-            MyThread18_2 myThread18_2 =new MyThread18_2();
+            MyThread18_2 myThread18_2 = new MyThread18_2();
             //myThread18_2.setPriority(10);
             myThread18_2.setPriority(1);
             myThread18_2.start();

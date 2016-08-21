@@ -11,23 +11,23 @@ public class ServiceC {
     private Lock lock = new ReentrantLock();
     private Condition condition = lock.newCondition();
 
-    public void await(){
+    public void await() {
         try {
             lock.lock();
-            System.out.println("await 时间为"+System.currentTimeMillis());
+            System.out.println("await 时间为" + System.currentTimeMillis());
             condition.await();
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             lock.unlock();
             System.out.println("锁释放了");
         }
     }
 
-    public void signal(){
+    public void signal() {
         try {
             lock.lock();
-            System.out.println("signal时间为"+System.currentTimeMillis());
+            System.out.println("signal时间为" + System.currentTimeMillis());
             condition.signal();
         } finally {
             lock.unlock();

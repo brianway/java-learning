@@ -12,7 +12,7 @@ package com.brianway.learning.java.multithread.lock.example7;
 public class Run7_isLocked {
     public static void main(String[] args) {
         final Service3 service = new Service3(true);
-        Runnable runnable =new Runnable() {
+        Runnable runnable = new Runnable() {
             public void run() {
                 service.serviceMethod();
             }

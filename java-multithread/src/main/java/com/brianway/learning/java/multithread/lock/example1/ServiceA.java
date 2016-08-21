@@ -11,7 +11,7 @@ public class ServiceA {
     private Lock lock = new ReentrantLock();
     private Condition condition = lock.newCondition();
 
-    public void await(){
+    public void await() {
         try {
             condition.await();
         } catch (InterruptedException e) {

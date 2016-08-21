@@ -13,7 +13,7 @@ public class Run2_wait {
         try {
             String lock = new String();
             System.out.println("syn上面");
-            synchronized (lock){
+            synchronized (lock) {
                 System.out.println("syn第一行,wait前面");
                 lock.wait();
                 System.out.println("wait下面的代码");

@@ -3,7 +3,7 @@ package com.brianway.learning.java.multithread.communication.example15;
 /**
  * Created by Brian on 2016/4/14.
  */
-public class ThreadA extends Thread{
+public class ThreadA extends Thread {
     private ThreadB b;
 
     public ThreadA(ThreadB b) {
@@ -14,7 +14,7 @@ public class ThreadA extends Thread{
     @Override
     public void run() {
         try {
-            synchronized (b){
+            synchronized (b) {
                 b.start();
                 Thread.sleep(6000);
             }

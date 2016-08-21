@@ -7,7 +7,6 @@ package com.brianway.learning.java.multithread.singleton.example1;
 /**
  * p265
  * 延迟加载/“懒汉模式”缺点展示
- *
  */
 public class Run1_singleton2 {
     public static void main(String[] args) {

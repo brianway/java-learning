@@ -8,9 +8,9 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class Service2 {
     private ReentrantLock lock = new ReentrantLock();
-    private Condition condition =  lock.newCondition();
+    private Condition condition = lock.newCondition();
 
-    public void testMethod(){
+    public void testMethod() {
         try {
             lock.lock();
             System.out.println("wait begin");

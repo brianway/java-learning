@@ -20,14 +20,14 @@ public class Run15_joinMore {
             //    if(i%1000000==0)System.out.print(i);
             //}
             System.out.println();
-            System.out.println("main end timer="+System.currentTimeMillis()+" threadName="+Thread.currentThread().getName());
+            System.out.println("main end timer=" + System.currentTimeMillis() + " threadName=" + Thread.currentThread().getName());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
     }
 
-    static class ThreadA extends Thread{
+    static class ThreadA extends Thread {
         private ThreadB b;
 
         public ThreadA(ThreadB b) {
@@ -38,10 +38,10 @@ public class Run15_joinMore {
         @Override
         public void run() {
             try {
-                synchronized (b){
-                    System.out.println("A begin timer="+System.currentTimeMillis()+" threadName="+Thread.currentThread().getName());
+                synchronized (b) {
+                    System.out.println("A begin timer=" + System.currentTimeMillis() + " threadName=" + Thread.currentThread().getName());
                     Thread.sleep(3000);
-                    System.out.println("A end   timer="+System.currentTimeMillis()+" threadName="+Thread.currentThread().getName());
+                    System.out.println("A end   timer=" + System.currentTimeMillis() + " threadName=" + Thread.currentThread().getName());
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -53,18 +53,16 @@ public class Run15_joinMore {
         @Override
         synchronized public void run() {
             try {
-                System.out.println("B begin timer="+System.currentTimeMillis()+" threadName="+Thread.currentThread().getName());
+                System.out.println("B begin timer=" + System.currentTimeMillis() + " threadName=" + Thread.currentThread().getName());
                 Thread.sleep(3000);
-                System.out.println("B end   timer="+System.currentTimeMillis()+" threadName="+Thread.currentThread().getName());
+                System.out.println("B end   timer=" + System.currentTimeMillis() + " threadName=" + Thread.currentThread().getName());
 
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
 
-
     }
-
 
 }
 

@@ -3,9 +3,10 @@ package com.brianway.learning.java.multithread.synchronize.example3;
 /**
  * Created by Brian on 2016/4/12.
  */
-public class ThreadB extends Thread{
+public class ThreadB extends Thread {
     private MyObject object;
-    public ThreadB(MyObject object){
+
+    public ThreadB(MyObject object) {
         super();
         this.object = object;
     }

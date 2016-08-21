@@ -4,7 +4,6 @@ package com.brianway.learning.java.multithread.singleton.example3;
  * Created by Brian on 2016/4/16.
  */
 
-
 /**
  * p272
  * 使用静态内置类实现单例模式

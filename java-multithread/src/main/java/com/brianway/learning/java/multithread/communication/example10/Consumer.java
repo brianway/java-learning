@@ -11,8 +11,8 @@ public class Consumer {
         this.myStack = myStack;
     }
 
-    public void popService(){
-        System.out.println("pop = "+ myStack.pop()+"  Consumer的popService方法中打印pop返回值");
+    public void popService() {
+        System.out.println("pop = " + myStack.pop() + "  Consumer的popService方法中打印pop返回值");
     }
 
 }

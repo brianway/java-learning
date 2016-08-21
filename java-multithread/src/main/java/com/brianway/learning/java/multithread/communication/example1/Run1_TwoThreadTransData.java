@@ -13,7 +13,7 @@ package com.brianway.learning.java.multithread.communication.example1;
 public class Run1_TwoThreadTransData {
     public static void main(String[] args) {
         MyList service = new MyList();
-        ThreadA a =new ThreadA(service);
+        ThreadA a = new ThreadA(service);
         a.setName("A");
         a.start();
         ThreadB b = new ThreadB(service);

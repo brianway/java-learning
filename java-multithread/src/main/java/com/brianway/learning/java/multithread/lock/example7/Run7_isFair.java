@@ -12,7 +12,7 @@ package com.brianway.learning.java.multithread.lock.example7;
 public class Run7_isFair {
     public static void main(String[] args) {
         final Service1 service = new Service1(true);
-        Runnable runnable =new Runnable() {
+        Runnable runnable = new Runnable() {
             public void run() {
                 service.serviceMethod();
             }
@@ -20,7 +20,7 @@ public class Run7_isFair {
         Thread thread = new Thread(runnable);
         thread.start();
         final Service1 service2 = new Service1(false);
-        runnable =new Runnable() {
+        runnable = new Runnable() {
             public void run() {
                 service2.serviceMethod();
             }

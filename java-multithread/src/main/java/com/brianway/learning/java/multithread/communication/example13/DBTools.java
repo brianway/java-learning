@@ -6,12 +6,12 @@ package com.brianway.learning.java.multithread.communication.example13;
 public class DBTools {
     volatile private boolean prevIsA = false;
 
-    synchronized public void backupA(){
+    synchronized public void backupA() {
         try {
-            while (prevIsA == true){
+            while (prevIsA == true) {
                 wait();
             }
-            for(int i =0;i<5;i++){
+            for (int i = 0; i < 5; i++) {
                 System.out.println("★★★★★");
             }
             prevIsA = true;
@@ -21,12 +21,12 @@ public class DBTools {
         }
     }
 
-    synchronized public void backupB(){
+    synchronized public void backupB() {
         try {
-            while (prevIsA == false){
+            while (prevIsA == false) {
                 wait();
             }
-            for(int i =0;i<5;i++){
+            for (int i = 0; i < 5; i++) {
                 System.out.println("☆☆☆☆☆");
             }
             prevIsA = false;

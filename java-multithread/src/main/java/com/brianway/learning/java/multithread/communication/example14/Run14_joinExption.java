@@ -15,7 +15,7 @@ public class Run14_joinExption {
             ThreadB b = new ThreadB();
             b.start();
             Thread.sleep(500);
-            ThreadC c =new ThreadC(b);
+            ThreadC c = new ThreadC(b);
             c.start();
         } catch (InterruptedException e) {
             e.printStackTrace();

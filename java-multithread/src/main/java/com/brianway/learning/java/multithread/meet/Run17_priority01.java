@@ -9,20 +9,20 @@ package com.brianway.learning.java.multithread.meet;
  * 线程优先级的继承性
  */
 
-class MyThread17_1 extends Thread{
+class MyThread17_1 extends Thread {
     @Override
     public void run() {
-        System.out.println("MyThread17_1 run priority="+ this.getPriority());
+        System.out.println("MyThread17_1 run priority=" + this.getPriority());
         MyThread17_2 myThread17_2 = new MyThread17_2();
         myThread17_2.start();
 
     }
 }
 
-class MyThread17_2 extends Thread{
+class MyThread17_2 extends Thread {
     @Override
     public void run() {
-        System.out.println("MyThread17_2 run priority="+ this.getPriority());
+        System.out.println("MyThread17_2 run priority=" + this.getPriority());
     }
 }
 

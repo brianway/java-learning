@@ -6,15 +6,16 @@ package com.brianway.learning.java.multithread.singleton.example2;
 public class MyObject4 {
     private static MyObject4 myObject;
 
-    private MyObject4(){}
+    private MyObject4() {
+    }
 
-    public static MyObject4 getInstance(){
+    public static MyObject4 getInstance() {
         //双检查锁机制
         try {
-            if(myObject == null){
+            if (myObject == null) {
                 Thread.sleep(3000);//模拟创建对象前的坐一些准备
-                synchronized (MyObject4.class){
-                    if(myObject == null){
+                synchronized (MyObject4.class) {
+                    if (myObject == null) {
                         myObject = new MyObject4();
                     }
                 }

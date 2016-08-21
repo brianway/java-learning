@@ -10,9 +10,9 @@ package com.brianway.learning.java.multithread.lock.example5;
  * 返回等待与此锁定相关的给定条件Conditon的线程估计数
  */
 public class Run5_getWaitQueueLength {
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException {
         final Service3 service = new Service3();
-        Runnable runnable =new Runnable() {
+        Runnable runnable = new Runnable() {
             public void run() {
                 service.waitMethod();
             }
@@ -20,11 +20,11 @@ public class Run5_getWaitQueueLength {
 
         Thread[] threads = new Thread[10];
 
-        for (int i=0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             threads[i] = new Thread(runnable);
         }
 
-        for (int i=0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             threads[i].start();
         }
 

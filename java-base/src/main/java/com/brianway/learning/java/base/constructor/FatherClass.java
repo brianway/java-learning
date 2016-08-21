@@ -6,7 +6,7 @@ package com.brianway.learning.java.base.constructor;
 public class FatherClass {
     private String name;
 
-    public FatherClass(){
+    public FatherClass() {
         System.out.println("执行了父类的无参构造方法");
     }
 

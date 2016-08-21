@@ -14,10 +14,10 @@ public class Run9_synchronized01_twoObjects {
         MyObject object1 = new MyObject();
         MyObject object2 = new MyObject();
 
-        MyThread a = new MyThread(service,object1);
+        MyThread a = new MyThread(service, object1);
         a.setName("a");
         a.start();
-        MyThread b = new MyThread(service,object2);
+        MyThread b = new MyThread(service, object2);
         b.setName("b");
         b.start();
 

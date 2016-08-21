@@ -15,16 +15,16 @@ import java.util.Timer;
  */
 public class Run3_cancel1 {
     public static void main(String[] args) {
-        System.out.println("当前时间为："+new Date());
+        System.out.println("当前时间为：" + new Date());
         Calendar calendar = Calendar.getInstance();
         Date runDate = calendar.getTime();
-        System.out.println("计划时间为："+ runDate);
+        System.out.println("计划时间为：" + runDate);
 
         TaskA task1 = new TaskA();
-        TaskB task2 =new TaskB();
+        TaskB task2 = new TaskB();
         Timer timer = new Timer();
-        timer.schedule(task1,runDate,4000);
-        timer.schedule(task2,runDate,4000);
+        timer.schedule(task1, runDate, 4000);
+        timer.schedule(task2, runDate, 4000);
 
     }
 }

@@ -17,17 +17,17 @@ public class Run11_manyP_oneC {
         Producer[] producers = new Producer[pNum];
         P_Thread[] p_threads = new P_Thread[pNum];
 
-        for(int i=0;i<pNum;i++){
+        for (int i = 0; i < pNum; i++) {
             producers[i] = new Producer(myStack);
         }
 
-        for (int i=0;i<pNum;i++){
+        for (int i = 0; i < pNum; i++) {
             p_threads[i] = new P_Thread(producers[i]);
             p_threads[i].start();
         }
 
         Consumer c = new Consumer(myStack);
-        C_Thread c_thread= new C_Thread(c);
+        C_Thread c_thread = new C_Thread(c);
         c_thread.start();
 
     }

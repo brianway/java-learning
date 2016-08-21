@@ -3,9 +3,10 @@ package com.brianway.learning.java.multithread.synchronize.example2;
 /**
  * Created by Brian on 2016/4/11.
  */
-public class ThreadB extends  Thread{
+public class ThreadB extends Thread {
     private HasSelfPrivateNum numRef;
-    public ThreadB(HasSelfPrivateNum numRef){
+
+    public ThreadB(HasSelfPrivateNum numRef) {
         super();
         this.numRef = numRef;
     }

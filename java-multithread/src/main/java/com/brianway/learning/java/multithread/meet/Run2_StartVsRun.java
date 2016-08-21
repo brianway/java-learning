@@ -9,14 +9,14 @@ package com.brianway.learning.java.multithread.meet;
  * myThread2.start()和myThread2.run()的区别
  */
 
-class MyThread2 extends Thread{
-    public MyThread2(){
-        System.out.println("构造方法打印:"+Thread.currentThread().getName());
+class MyThread2 extends Thread {
+    public MyThread2() {
+        System.out.println("构造方法打印:" + Thread.currentThread().getName());
     }
 
     @Override
     public void run() {
-        System.out.println("run方法打印："+ Thread.currentThread().getName());
+        System.out.println("run方法打印：" + Thread.currentThread().getName());
     }
 }
 

@@ -1,7 +1,5 @@
 package com.brianway.learning.java.multithread.supplement.example2;
 
-import sun.security.provider.SHA;
-
 /**
  * Created by Brian on 2016/4/17.
  */
@@ -22,21 +20,22 @@ public class MyThread extends Thread {
         this.showNumPosition = showNumPosition;
     }
 
-
     @Override
     public void run() {
         try {
-            synchronized (lock){
+            synchronized (lock) {
                 //System.out.println("ThreadName="+ Thread.currentThread().getName()+" get the lock");
-                while (true){
-                    if(addNumber % 3 == showNumPosition){
-                        System.out.println("ThreadName="+ Thread.currentThread().getName()
-                        +" runCount = "+addNumber+ " "+ showChar);
+                while (true) {
+                    if (addNumber % 3 == showNumPosition) {
+                        System.out.println("ThreadName=" + Thread.currentThread().getName()
+                                + " runCount = " + addNumber + " " + showChar);
                         lock.notifyAll();
                         addNumber++;
                         printCount++;
-                        if(printCount == 3){break;}
-                    }else {
+                        if (printCount == 3) {
+                            break;
+                        }
+                    } else {
                         //System.out.println("ThreadName="+ Thread.currentThread().getName()+" will await");
                         lock.wait();
                         //System.out.println("ThreadName="+ Thread.currentThread().getName()+" after await");

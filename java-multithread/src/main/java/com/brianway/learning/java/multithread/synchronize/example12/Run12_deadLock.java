@@ -14,11 +14,11 @@ public class Run12_deadLock {
         try {
             DealThread t1 = new DealThread();
             t1.setFlag("a");
-            Thread thread1 =new Thread(t1);
+            Thread thread1 = new Thread(t1);
             thread1.start();
             Thread.sleep(100);
             t1.setFlag("b");
-            Thread thread2 =new Thread(t1);
+            Thread thread2 = new Thread(t1);
             thread2.start();
         } catch (InterruptedException e) {
             e.printStackTrace();

@@ -9,18 +9,17 @@ package com.brianway.learning.java.multithread.meet;
  * suspend独占锁问题,println()
  */
 
-class MyThread15 extends Thread{
+class MyThread15 extends Thread {
     private long i = 0;
 
     @Override
     public void run() {
-        while(true){
+        while (true) {
             i++;
             System.out.println(i);
         }
     }
 }
-
 
 public class Run15_suspendAndresume03 {
     public static void main(String[] args) {

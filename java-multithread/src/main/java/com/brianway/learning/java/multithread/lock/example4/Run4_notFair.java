@@ -8,7 +8,6 @@ package com.brianway.learning.java.multithread.lock.example4;
  * P218
  * 非公平锁测试
  * 打印结果乱序，县启动的线程不一定先获得锁
- *
  */
 public class Run4_notFair {
     public static void main(String[] args) {
@@ -16,18 +15,18 @@ public class Run4_notFair {
 
         Runnable runnable = new Runnable() {
             public void run() {
-                System.out.println("★线程"+Thread.currentThread().getName()+"运行了");
+                System.out.println("★线程" + Thread.currentThread().getName() + "运行了");
                 service.serviceMethod();
             }
         };
 
         Thread[] threads = new Thread[10];
 
-        for (int i=0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             threads[i] = new Thread(runnable);
         }
 
-        for (int i=0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             threads[i].start();
         }
 

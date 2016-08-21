@@ -14,15 +14,15 @@ import java.util.Timer;
  */
 public class Run2_period3 {
     public static void main(String[] args) {
-        System.out.println("当前时间为："+new Date());
+        System.out.println("当前时间为：" + new Date());
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.SECOND,10);
+        calendar.add(Calendar.SECOND, 10);
         Date runDate = calendar.getTime();
-        System.out.println("计划时间为："+ runDate);
+        System.out.println("计划时间为：" + runDate);
 
         TaskA task = new TaskA();
         Timer timer = new Timer();
-        timer.schedule(task,runDate,3000);
+        timer.schedule(task, runDate, 3000);
     }
 }
 

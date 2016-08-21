@@ -4,8 +4,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
 
-
-
 /**
  * Created by Brian on 2016/4/15.
  */
@@ -16,16 +14,16 @@ import java.util.Timer;
  * 有时不一定会停止计划任务,（见源码，queue锁）
  */
 public class Run3_cancel3 {
-    public static void main(String[] args) throws InterruptedException{
-        int i =0;
+    public static void main(String[] args) throws InterruptedException {
+        int i = 0;
         Calendar calendar = Calendar.getInstance();
         Date runDate = calendar.getTime();
 
-        while (true){
+        while (true) {
             i++;
             Timer timer = new Timer();
             MyTask task = new MyTask(i);
-            timer.schedule(task,runDate);
+            timer.schedule(task, runDate);
             timer.cancel();
         }
 

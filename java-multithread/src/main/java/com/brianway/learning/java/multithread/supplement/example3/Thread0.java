@@ -7,12 +7,12 @@ import java.util.Date;
 /**
  * Created by Brian on 2016/4/17.
  */
-public class Thread0 extends Thread{
+public class Thread0 extends Thread {
     private SimpleDateFormat sdf;
     private String dateString;
 
-    public Thread0(SimpleDateFormat sdf,String dateString){
-        this.sdf =sdf;
+    public Thread0(SimpleDateFormat sdf, String dateString) {
+        this.sdf = sdf;
         this.dateString = dateString;
     }
 
@@ -21,9 +21,9 @@ public class Thread0 extends Thread{
         try {
             Date date = sdf.parse(dateString);
             String newDateString = sdf.format(date).toString();
-            if(!newDateString.equals(dateString)){
-                System.out.println("ThreadName = "+ this.getName()
-                +"报错了 日期字符串："+dateString
+            if (!newDateString.equals(dateString)) {
+                System.out.println("ThreadName = " + this.getName()
+                        + "报错了 日期字符串：" + dateString
                         + " 转换成的日期为" + newDateString);
             }
         } catch (ParseException e) {

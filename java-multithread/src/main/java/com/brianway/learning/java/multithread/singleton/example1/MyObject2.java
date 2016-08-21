@@ -6,12 +6,13 @@ package com.brianway.learning.java.multithread.singleton.example1;
 public class MyObject2 {
     private static MyObject2 myObject;
 
-    private MyObject2(){}
+    private MyObject2() {
+    }
 
-    public static MyObject2 getInstance(){
+    public static MyObject2 getInstance() {
 
         try {
-            if(myObject == null){
+            if (myObject == null) {
                 Thread.sleep(2000);//模拟创建对象前的坐一些准备
                 myObject = new MyObject2();
             }

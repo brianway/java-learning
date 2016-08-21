@@ -13,12 +13,12 @@ public class Run2_groupAddThread {
         ThreadA a = new ThreadA();
         ThreadB b = new ThreadB();
         ThreadGroup group = new ThreadGroup("Brian's group");
-        Thread athread = new Thread(group,a);
-        Thread bthread = new Thread(group,b);
+        Thread athread = new Thread(group, a);
+        Thread bthread = new Thread(group, b);
         athread.start();
         bthread.start();
-        System.out.println("活动的线程数为："+group.activeCount());
-        System.out.println("线程组的名称为："+group.getName());
+        System.out.println("活动的线程数为：" + group.activeCount());
+        System.out.println("线程组的名称为：" + group.getName());
     }
 }
 

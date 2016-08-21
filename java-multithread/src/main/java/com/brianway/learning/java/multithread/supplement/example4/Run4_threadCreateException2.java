@@ -14,7 +14,7 @@ public class Run4_threadCreateException2 {
         t1.setName("thread t1");
         t1.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
             public void uncaughtException(Thread t, Throwable e) {
-                System.out.println("线程:"+t.getName()+" 出现了异常：");
+                System.out.println("线程:" + t.getName() + " 出现了异常：");
                 e.printStackTrace();
             }
         });

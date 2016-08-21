@@ -11,9 +11,9 @@ package com.brianway.learning.java.multithread.supplement.example2;
 public class Run2_threadRunSyn {
     public static void main(String[] args) {
         Object lock = new Object();
-        MyThread a = new MyThread(lock,"A",1);
-        MyThread b = new MyThread(lock,"B",2);
-        MyThread c = new MyThread(lock,"C",0);
+        MyThread a = new MyThread(lock, "A", 1);
+        MyThread b = new MyThread(lock, "B", 2);
+        MyThread c = new MyThread(lock, "C", 0);
         a.start();
         b.start();
         c.start();

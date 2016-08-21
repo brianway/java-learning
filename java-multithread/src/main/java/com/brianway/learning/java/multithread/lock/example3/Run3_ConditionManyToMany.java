@@ -15,7 +15,7 @@ public class Run3_ConditionManyToMany {
         MyService service = new MyService();
         ThreadA[] threadAs = new ThreadA[10];
         ThreadB[] threadBs = new ThreadB[10];
-        for(int i=0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             threadAs[i] = new ThreadA(service);
             threadBs[i] = new ThreadB(service);
             threadAs[i].start();

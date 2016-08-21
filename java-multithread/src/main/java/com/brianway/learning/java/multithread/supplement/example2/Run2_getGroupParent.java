@@ -11,14 +11,14 @@ package com.brianway.learning.java.multithread.supplement.example2;
  */
 public class Run2_getGroupParent {
     public static void main(String[] args) {
-        System.out.println("线程："+ Thread.currentThread().getName()
-        + " 所在的线程组名为：" +Thread.currentThread().getThreadGroup().getName());
+        System.out.println("线程：" + Thread.currentThread().getName()
+                + " 所在的线程组名为：" + Thread.currentThread().getThreadGroup().getName());
 
         System.out.println("main线程所在的线程组的父线程组名为："
-                +Thread.currentThread().getThreadGroup().getParent().getName());
+                + Thread.currentThread().getThreadGroup().getParent().getName());
 
         System.out.println("main线程所在的线程组的父线程组的父线程组名为："
-                +Thread.currentThread().getThreadGroup().getParent().getParent().getName());
+                + Thread.currentThread().getThreadGroup().getParent().getParent().getName());
 
     }
 }

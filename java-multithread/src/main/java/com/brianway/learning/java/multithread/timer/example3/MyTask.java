@@ -14,6 +14,6 @@ public class MyTask extends TimerTask {
 
     @Override
     public void run() {
-        System.out.println("第"+i+"次没有被cancel取消");
+        System.out.println("第" + i + "次没有被cancel取消");
     }
 }

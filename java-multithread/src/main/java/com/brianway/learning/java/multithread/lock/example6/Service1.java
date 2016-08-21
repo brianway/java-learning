@@ -10,7 +10,7 @@ public class Service1 {
     public ReentrantLock lock = new ReentrantLock();
     public Condition newCondition = lock.newCondition();
 
-    public void waitMethod(){
+    public void waitMethod() {
         try {
             lock.lock();
             Thread.sleep(Integer.MAX_VALUE);

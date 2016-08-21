@@ -4,8 +4,6 @@ package com.brianway.learning.java.multithread.communication.example6;
  * Created by Brian on 2016/4/14.
  */
 
-
-
 /**
  * P155
  * wait等待条件变化
@@ -15,12 +13,12 @@ public class Run6_waitOld {
         String lock = new String("");
         Add add = new Add(lock);
         Subtract sub = new Subtract(lock);
-        ThreadSubtract subtract1 = new ThreadSubtract("sub1",sub);
+        ThreadSubtract subtract1 = new ThreadSubtract("sub1", sub);
         subtract1.start();
-        ThreadSubtract subtract2 = new ThreadSubtract("sub2",sub);
+        ThreadSubtract subtract2 = new ThreadSubtract("sub2", sub);
         subtract2.start();
         Thread.sleep(1000);
-        ThreadAdd addThread = new ThreadAdd("add1",add);
+        ThreadAdd addThread = new ThreadAdd("add1", add);
         addThread.start();
 
     }

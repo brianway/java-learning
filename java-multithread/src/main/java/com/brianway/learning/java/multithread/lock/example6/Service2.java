@@ -10,7 +10,7 @@ public class Service2 {
     private ReentrantLock lock = new ReentrantLock();
     private Condition newCondition = lock.newCondition();
 
-    public void waitMethod(){
+    public void waitMethod() {
         try {
             lock.lock();
             //System.out.println("before await "+Thread.currentThread().getName());
@@ -22,6 +22,7 @@ public class Service2 {
             lock.unlock();
         }
     }
+
     public void notifyMethod() {
         try {
             lock.lock();

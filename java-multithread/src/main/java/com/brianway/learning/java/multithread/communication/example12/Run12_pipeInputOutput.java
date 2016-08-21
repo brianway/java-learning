@@ -26,17 +26,17 @@ public class Run12_pipeInputOutput {
             //inputStream.connect(outputStream);
             outputStream.connect(inputStream);
 
-            ThreadRead threadRead = new ThreadRead(readData,inputStream);
+            ThreadRead threadRead = new ThreadRead(readData, inputStream);
             threadRead.start();
 
             Thread.sleep(2000);
 
-            ThreadWrite threadWrite = new ThreadWrite(writeData,outputStream);
+            ThreadWrite threadWrite = new ThreadWrite(writeData, outputStream);
             threadWrite.start();
 
         } catch (IOException e) {
             e.printStackTrace();
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }

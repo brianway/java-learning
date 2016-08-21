@@ -9,7 +9,7 @@ public class ThreadRead extends Thread {
     private ReadData read;
     private PipedInputStream input;
 
-    public ThreadRead(ReadData read,PipedInputStream input) {
+    public ThreadRead(ReadData read, PipedInputStream input) {
         super();
         this.input = input;
         this.read = read;

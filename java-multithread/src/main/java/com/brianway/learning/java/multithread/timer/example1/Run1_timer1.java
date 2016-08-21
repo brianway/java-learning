@@ -15,14 +15,14 @@ import java.util.Timer;
  */
 public class Run1_timer1 {
     public static void main(String[] args) {
-        System.out.println("当前时间为："+new Date());
+        System.out.println("当前时间为：" + new Date());
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.SECOND,5);
+        calendar.add(Calendar.SECOND, 5);
         Date runDate = calendar.getTime();
 
         MyTask task = new MyTask();
         Timer timer = new Timer();
-        timer.schedule(task,runDate);
+        timer.schedule(task, runDate);
     }
 }
 

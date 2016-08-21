@@ -8,24 +8,24 @@ package com.brianway.learning.java.multithread.meet;
  * P11数据共享的例子
  */
 
-class MyThread extends Thread{
+class MyThread extends Thread {
     private int count = 5;
 
     @Override
     public void run() {
         super.run();
         count--;
-        System.out.println("由"+this.currentThread().getName()+"  计算,count="+count);
+        System.out.println("由" + this.currentThread().getName() + "  计算,count=" + count);
     }
 }
 
 public class Run {
     public static void main(String[] args) {
         MyThread myThread = new MyThread();
-        Thread a = new Thread(myThread,"A");
-        Thread b = new Thread(myThread,"B");
-        Thread c = new Thread(myThread,"C");
-        Thread d = new Thread(myThread,"D");
+        Thread a = new Thread(myThread, "A");
+        Thread b = new Thread(myThread, "B");
+        Thread c = new Thread(myThread, "C");
+        Thread d = new Thread(myThread, "D");
         a.start();
         b.start();
         c.start();

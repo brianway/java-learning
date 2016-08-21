@@ -11,8 +11,8 @@ package com.brianway.learning.java.multithread.meet;
 public class Run9_interrupted02 {
     public static void main(String[] args) {
         Thread.currentThread().interrupt();
-        System.out.println("Thread.interrupted()，是否停止1？="+Thread.interrupted());
-        System.out.println("Thread.interrupted()，是否停止2？="+Thread.interrupted());
+        System.out.println("Thread.interrupted()，是否停止1？=" + Thread.interrupted());
+        System.out.println("Thread.interrupted()，是否停止2？=" + Thread.interrupted());
         System.out.println("end");
     }
 }

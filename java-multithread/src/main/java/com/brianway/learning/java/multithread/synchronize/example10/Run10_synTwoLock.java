@@ -4,7 +4,6 @@ package com.brianway.learning.java.multithread.synchronize.example10;
  * Created by brian on 2016/4/13.
  */
 
-
 /**
  * P97
  * 验证synchronized关键字加载static静态方法和加到非静态方法不是同一个锁
@@ -20,7 +19,7 @@ public class Run10_synTwoLock {
         ThreadB b = new ThreadB(service);
         b.setName("B");
         b.start();
-        ThreadC c =new ThreadC(service);
+        ThreadC c = new ThreadC(service);
         c.setName("C");
         c.start();
     }

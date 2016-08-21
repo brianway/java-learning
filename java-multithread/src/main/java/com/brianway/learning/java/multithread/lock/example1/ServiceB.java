@@ -11,7 +11,7 @@ public class ServiceB {
     private Lock lock = new ReentrantLock();
     private Condition condition = lock.newCondition();
 
-    public void waitMethod(){
+    public void waitMethod() {
         try {
             lock.lock();
             System.out.println("A");
@@ -19,7 +19,7 @@ public class ServiceB {
             System.out.println("B");
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             lock.unlock();
             System.out.println("锁释放了");
         }

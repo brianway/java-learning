@@ -13,6 +13,6 @@ public class InheritableThreadLocalExt2 extends InheritableThreadLocal {
 
     @Override
     protected Object childValue(Object parentValue) {
-        return parentValue+"我在子线程加的~";
+        return parentValue + "我在子线程加的~";
     }
 }

@@ -4,7 +4,6 @@ package com.brianway.learning.java.multithread.singleton.example3;
  * Created by Brian on 2016/4/16.
  */
 
-
 /**
  * p277
  * 使用enum枚举数据类型实现单例模式

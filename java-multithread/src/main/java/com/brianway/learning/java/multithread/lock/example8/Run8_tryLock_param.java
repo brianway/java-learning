@@ -12,9 +12,9 @@ package com.brianway.learning.java.multithread.lock.example8;
 public class Run8_tryLock_param {
     public static void main(String[] args) {
         final Service4 service = new Service4();
-        Runnable runnable =new Runnable() {
+        Runnable runnable = new Runnable() {
             public void run() {
-                System.out.println(Thread.currentThread().getName()+" 调用waitMethod时间:"+System.currentTimeMillis());
+                System.out.println(Thread.currentThread().getName() + " 调用waitMethod时间:" + System.currentTimeMillis());
                 service.waitMethod();
             }
         };

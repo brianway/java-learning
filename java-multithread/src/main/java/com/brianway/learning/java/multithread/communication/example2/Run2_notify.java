@@ -10,6 +10,7 @@ package com.brianway.learning.java.multithread.communication.example2;
  * notify调用后，并不会立即释放对象锁，而是退出synchronized代码块后
  *
  * 当在一个Synchronized块中调用Sleep()方法是，线程虽然休眠了，但是对象的机锁并木有被释放，其他线程无法访问这个对象
+ *
  * @see Thread2 的run方法
  */
 public class Run2_notify {

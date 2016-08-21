@@ -7,7 +7,6 @@ package com.brianway.learning.java.multithread.communication.example9;
 /**
  * P166
  * 一生产与一消费
- *
  */
 public class Run9_oneP_oneC {
     public static void main(String[] args) {
@@ -15,7 +14,7 @@ public class Run9_oneP_oneC {
         Producer p = new Producer(myStack);
         Consumer c = new Consumer(myStack);
         P_Thread p_thread = new P_Thread(p);
-        C_Thread c_thread= new C_Thread(c);
+        C_Thread c_thread = new C_Thread(c);
 
         p_thread.start();
         c_thread.start();

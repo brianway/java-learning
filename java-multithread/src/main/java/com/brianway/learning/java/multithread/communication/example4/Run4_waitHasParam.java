@@ -10,13 +10,13 @@ package com.brianway.learning.java.multithread.communication.example4;
  */
 public class Run4_waitHasParam {
     static private Object lock = new Object();
-    static private Runnable runnable1 =new Runnable() {
+    static private Runnable runnable1 = new Runnable() {
         public void run() {
             try {
-                synchronized (lock){
-                    System.out.println("wait begin timer="+System.currentTimeMillis());
+                synchronized (lock) {
+                    System.out.println("wait begin timer=" + System.currentTimeMillis());
                     lock.wait(4000);
-                    System.out.println("wait end timer="+System.currentTimeMillis());
+                    System.out.println("wait end timer=" + System.currentTimeMillis());
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();

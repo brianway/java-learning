@@ -16,13 +16,13 @@ import java.util.TimerTask;
  * 不延时的情况下，若执行任务未被延时，下次执行任务的开始时间是上一次任务的开始时间加上period
  */
 public class Run4_schedule3 {
-    static public class MyTask extends TimerTask{
+    static public class MyTask extends TimerTask {
         @Override
         public void run() {
             try {
-                System.out.println("begin timer="+ System.currentTimeMillis());
+                System.out.println("begin timer=" + System.currentTimeMillis());
                 Thread.sleep(1000);
-                System.out.println("end   timer="+ System.currentTimeMillis());
+                System.out.println("end   timer=" + System.currentTimeMillis());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -34,7 +34,7 @@ public class Run4_schedule3 {
         Calendar calendar = Calendar.getInstance();
         Date runDate = calendar.getTime();
         Timer timer = new Timer();
-        timer.schedule(task,runDate,3000);
+        timer.schedule(task, runDate, 3000);
     }
 }
 

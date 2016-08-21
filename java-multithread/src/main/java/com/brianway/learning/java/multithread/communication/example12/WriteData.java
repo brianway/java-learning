@@ -7,11 +7,11 @@ import java.io.PipedOutputStream;
  * Created by Brian on 2016/4/14.
  */
 public class WriteData {
-    public void writeMethod(PipedOutputStream out){
+    public void writeMethod(PipedOutputStream out) {
         try {
             System.out.println("write  :");
-            for(int i=0;i<300;i++){
-                String outData = "" + (i+1);
+            for (int i = 0; i < 300; i++) {
+                String outData = "" + (i + 1);
                 out.write(outData.getBytes());
                 System.out.print(outData);
             }

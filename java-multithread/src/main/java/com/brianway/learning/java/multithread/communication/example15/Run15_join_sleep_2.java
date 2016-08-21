@@ -23,7 +23,7 @@ public class Run15_join_sleep_2 {
         }
     }
 
-    static class ThreadA2  extends Thread{
+    static class ThreadA2 extends Thread {
         private ThreadB b;
 
         public ThreadA2(ThreadB b) {
@@ -34,14 +34,14 @@ public class Run15_join_sleep_2 {
         @Override
         public void run() {
             try {
-                synchronized (b){
+                synchronized (b) {
                     b.start();
                     b.join();
-                    System.out.println("a run before for "+ System.currentTimeMillis());
-                    for(int i =0;i<100000000;i++){
+                    System.out.println("a run before for " + System.currentTimeMillis());
+                    for (int i = 0; i < 100000000; i++) {
                         Math.random();
                     }
-                    System.out.println("a run end "+ System.currentTimeMillis());
+                    System.out.println("a run end " + System.currentTimeMillis());
                 }
 
             } catch (InterruptedException e) {

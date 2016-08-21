@@ -3,7 +3,7 @@ package com.brianway.learning.java.multithread.synchronize.example6;
 /**
  * Created by Brian on 2016/4/12.
  */
-public class ThreadB extends Thread{
+public class ThreadB extends Thread {
     private Service service;
 
     public ThreadB(String name, Service service) {

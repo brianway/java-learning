@@ -12,7 +12,7 @@ package com.brianway.learning.java.multithread.synchronize.example11;
 public class Run11_StringAndSyn {
     public static void main(String[] args) {
         ServiceA serviceA = new ServiceA();
-        ThreadA a =new ThreadA(serviceA);
+        ThreadA a = new ThreadA(serviceA);
         a.setName("A");
         a.start();
         ThreadA b = new ThreadA(serviceA);

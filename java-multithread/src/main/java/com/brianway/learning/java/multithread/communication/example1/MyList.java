@@ -1,6 +1,5 @@
 package com.brianway.learning.java.multithread.communication.example1;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,10 +9,11 @@ import java.util.List;
 public class MyList {
     private List list = new ArrayList();
 
-    public void add(){
+    public void add() {
         list.add("brian");
     }
-    public int size(){
+
+    public int size() {
         return list.size();
     }
 }

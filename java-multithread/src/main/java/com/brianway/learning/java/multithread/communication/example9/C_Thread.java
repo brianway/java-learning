@@ -3,7 +3,7 @@ package com.brianway.learning.java.multithread.communication.example9;
 /**
  * Created by Brian on 2016/4/14.
  */
-public class C_Thread extends Thread{
+public class C_Thread extends Thread {
     private Consumer c;
 
     public C_Thread(Consumer c) {
@@ -13,7 +13,7 @@ public class C_Thread extends Thread{
 
     @Override
     public void run() {
-        while (true){
+        while (true) {
             c.popService();
         }
     }

@@ -13,7 +13,7 @@ public class NotifyThread extends Thread {
 
     @Override
     public void run() {
-        synchronized (lock){
+        synchronized (lock) {
             lock.notify();
         }
     }

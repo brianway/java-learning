@@ -11,8 +11,8 @@ package com.brianway.learning.java.multithread.communication.example16;
 public class Run16_InheritableThreadLocalExt {
     public static void main(String[] args) {
         try {
-            for(int i=0;i<10;i++){
-                System.out.println("在Main线程中取值="+Tools.itl.get());
+            for (int i = 0; i < 10; i++) {
+                System.out.println("在Main线程中取值=" + Tools.itl.get());
                 Thread.sleep(100);
             }
             Thread.sleep(5000);

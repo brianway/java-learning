@@ -6,7 +6,6 @@ package com.brianway.learning.java.multithread.supplement.example6;
 
 /**
  * P303
- *
  */
 public class Run6_threadExceptionMove1 {
     public static void main(String[] args) {

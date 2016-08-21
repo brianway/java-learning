@@ -18,7 +18,7 @@ public class Run9_synchronized02 {
         Service service = new Service();
         MyObject1 object1 = new MyObject1();
 
-        MyThread a = new MyThread(service,object1);
+        MyThread a = new MyThread(service, object1);
         a.setName("a");
         a.start();
         Thread1 b = new Thread1(object1);

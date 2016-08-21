@@ -4,7 +4,7 @@ package com.brianway.learning.java.multithread.synchronize.example11;
  * Created by Brian on 2016/4/13.
  */
 public class ServiceB {
-    public static void print(Object object){
+    public static void print(Object object) {
         try {
             synchronized (object) {
                 while (true) {
@@ -12,7 +12,7 @@ public class ServiceB {
                     Thread.sleep(500);
                 }
             }
-        }catch(InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 

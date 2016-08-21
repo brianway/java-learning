@@ -8,6 +8,7 @@ package com.brianway.learning.java.multithread.synchronize.example10;
  * P101
  * 验证同步sychronized(class)代码块的作用
  * 顺便验证了下static方法是不能复写的
+ *
  * @see ServiceSub,ServiceSub2
  */
 public class Run10_synBlockMoreObjectOneLock {
@@ -20,11 +21,11 @@ public class Run10_synBlockMoreObjectOneLock {
     /**
      * 验证同步sychronized(class)代码块的作用
      */
-    public static void testBlock(){
+    public static void testBlock() {
         final ServiceSub service1 = new ServiceSub();
         final ServiceSub service2 = new ServiceSub();
 
-        Thread a = new Thread(){
+        Thread a = new Thread() {
             @Override
             public void run() {
                 service1.printA();
@@ -32,7 +33,7 @@ public class Run10_synBlockMoreObjectOneLock {
         };
         a.setName("A");
         a.start();
-        Thread b = new Thread(){
+        Thread b = new Thread() {
             @Override
             public void run() {
                 service2.printB();
@@ -45,7 +46,7 @@ public class Run10_synBlockMoreObjectOneLock {
     /**
      * testSub断点调试结果是运行的Service类的printA方法
      */
-    public  static void testSub(){
+    public static void testSub() {
         ServiceSub service1 = new ServiceSub();
         ServiceSub service2 = new ServiceSub();
 
@@ -60,7 +61,7 @@ public class Run10_synBlockMoreObjectOneLock {
     /**
      * testSub2断点调试结果是运行的Service类的printA方法
      */
-    public  static void testSub2(){
+    public static void testSub2() {
         ServiceSub2 service1 = new ServiceSub2();
         ServiceSub2 service2 = new ServiceSub2();
 
@@ -71,7 +72,6 @@ public class Run10_synBlockMoreObjectOneLock {
         b.setName("B");
         b.start();
     }
-
 
 }
 

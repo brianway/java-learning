@@ -14,10 +14,10 @@ public class ThreadB extends Thread {
     @Override
     public void run() {
         try {
-            while (true){
+            while (true) {
                 //System.out.println("in b while: "+list.size());
                 //synchronized ("any"){}
-                if(list.size() == 5){
+                if (list.size() == 5) {
                     System.out.println("达到size了，线程b要退出了");
                     throw new InterruptedException();
                 }

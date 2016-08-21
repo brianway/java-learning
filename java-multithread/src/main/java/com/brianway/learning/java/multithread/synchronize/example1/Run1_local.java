@@ -7,7 +7,6 @@ package com.brianway.learning.java.multithread.synchronize.example1;
 /**
  * P53例子
  * 方法内局部变量则不存在“非线程安全”问题
- *
  */
 
 public class Run1_local {

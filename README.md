@@ -13,6 +13,8 @@
 
 # 仓库目录
 
+**点击相应的模块能看到每个目录的说明文档**
+
 - [blogs](/blogs):博客文档
 - [java-base](/java-base):java基础巩固模块的java源码
 - [java-multithread](/java-multithread):多线程模块的java源码
@@ -57,7 +59,7 @@
 
 * [x] 整理成maven的结构，使用聚合和继承特性(2016.4.12完成)
 * [ ] 原有的javase部分代码重构为java-base模块，并逐步上传代码
-* [ ] 多线程部分使用java-multithread模块(进行中)
+* [x] 多线程部分使用java-multithread模块(2016.4.17完成)
 * [ ] 集合类部分使用模块java-collection
 * [ ] IO部分使用模块java-io
 
@@ -71,6 +73,7 @@
 - [oschina](http://my.oschina.net/brianway)
 - [CSDN](http://blog.csdn.net/h3243212/)
 
+邮箱: weichuyang@163.com
 
 -----
 

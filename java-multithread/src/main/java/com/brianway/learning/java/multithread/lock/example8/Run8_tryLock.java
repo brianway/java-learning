@@ -7,7 +7,7 @@ package com.brianway.learning.java.multithread.lock.example8;
 /**
  * P228
  * 测试方法boolean tryLock()
- * 尽在调用时锁定未被另一个线程保持的情况下，才获取该锁定
+ * 仅在调用时锁定未被另一个线程保持的情况下，才获取该锁定
  */
 public class Run8_tryLock {
     public static void main(String[] args) {

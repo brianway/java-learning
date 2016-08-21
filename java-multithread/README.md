@@ -72,3 +72,97 @@
     - [Run15_volatile.java](src/main/java/com/brianway/learning/java/multithread/synchronize/example15/Run15_volatile.java):不使用 `volatile` 关键字,JVM 配置 `-server`
 - [example16](src/main/java/com/brianway/learning/java/multithread/synchronize/example16)
     - [Run16_volatile.java](src/main/java/com/brianway/learning/java/multithread/synchronize/example16/Run16_volatile.java):`volatile` 非原子的特性
+
+
+
+## communication
+
+- [example1](src/main/java/com/brianway/learning/java/multithread/communication/example1)
+    - [Run1_TwoThreadTransData.java](src/main/java/com/brianway/learning/java/multithread/communication/example1/Run1_TwoThreadTransData.java):不使用等待/通知机制实现线程间通
+- [example2](src/main/java/com/brianway/learning/java/multithread/communication/example2)
+    - [Run2_noObjectLock.java](src/main/java/com/brianway/learning/java/multithread/communication/example2/Run2_noObjectLock.java):没有“对象监视器”，调用 `wait()` 方法出现运行时异常
+    - [Run2_notify.java](src/main/java/com/brianway/learning/java/multithread/communication/example2/Run2_notify.java):`notify` 实现通知,`notify` 调用后，并不会立即释放对象锁，而是退出 `synchronized` 代码块后
+    - [Run2_sleep.java](src/main/java/com/brianway/learning/java/multithread/communication/example2/Run2_sleep.java):测试 `sleep()` 期间其他线程是否执行
+    - [Run2_wait.java](src/main/java/com/brianway/learning/java/multithread/communication/example2/Run2_wait.java):`wait()` 永远阻塞
+- [example3](src/main/java/com/brianway/learning/java/multithread/communication/example3)
+    - [Run3_notifyAll.java](src/main/java/com/brianway/learning/java/multithread/communication/example3/Run3_notifyAll.java):唤醒多个线程
+    - [Run3_notifyMany.java](src/main/java/com/brianway/learning/java/multithread/communication/example3/Run3_notifyMany.java):通知多个线程
+    - [Run3_notifyOne.java](src/main/java/com/brianway/learning/java/multithread/communication/example3/Run3_notifyOne.java):通知一个线程
+- [example4](src/main/java/com/brianway/learning/java/multithread/communication/example4)
+    - [Run4_waitHasParam.java](src/main/java/com/brianway/learning/java/multithread/communication/example4/Run4_waitHasParam.java):`wait(long)` 使用，超时自动唤醒
+    - [Run4_waitHasParam2.java](src/main/java/com/brianway/learning/java/multithread/communication/example4/Run4_waitHasParam2.java):`wait(long)` 使用，时间限制内由其他线程唤醒
+- [example5](src/main/java/com/brianway/learning/java/multithread/communication/example5)
+    - [Run5_notify.java](src/main/java/com/brianway/learning/java/multithread/communication/example5/Run5_notify.java):`notify` 正常通知
+    - [Run5_notifyEarly.java](src/main/java/com/brianway/learning/java/multithread/communication/example5/Run5_notifyEarly.java):`notify` 通知过早
+- [example6](src/main/java/com/brianway/learning/java/multithread/communication/example6)
+    - [Run6_waitOld.java](src/main/java/com/brianway/learning/java/multithread/communication/example6/Run6_waitOld.java):`wait` 等待条件变化
+- [example7](src/main/java/com/brianway/learning/java/multithread/communication/example7)
+    - [Run7_ProducerAndConsumer_One.java](src/main/java/com/brianway/learning/java/multithread/communication/example7/Run7_ProducerAndConsumer_One.java):生产者/消费者模式,一生产一消费
+- [example8](src/main/java/com/brianway/learning/java/multithread/communication/example8)
+    - [Run8_allWait.java](src/main/java/com/brianway/learning/java/multithread/communication/example8/Run8_allWait.java):多生产与多消费，假死
+- [example9](src/main/java/com/brianway/learning/java/multithread/communication/example9)
+    - [Run9_oneP_manyC.java](src/main/java/com/brianway/learning/java/multithread/communication/example9/Run9_oneP_manyC.java):一生产与多消费
+    - [Run9_oneP_oneC.java](src/main/java/com/brianway/learning/java/multithread/communication/example9/Run9_oneP_oneC.java):一生产与一消费
+- [example10](src/main/java/com/brianway/learning/java/multithread/communication/example10)
+    - [Run10_oneP_manyC.java](src/main/java/com/brianway/learning/java/multithread/communication/example10/Run10_oneP_manyC.java):一生产与多消费
+- [example11](src/main/java/com/brianway/learning/java/multithread/communication/example11)
+    - [Run11_manyP_manyC.java](src/main/java/com/brianway/learning/java/multithread/communication/example11/Run11_manyP_manyC.java):多生产与多消费
+    - [Run11_manyP_oneC.java](src/main/java/com/brianway/learning/java/multithread/communication/example11/Run11_manyP_oneC.java):多生产与一消费
+    - [Run11_oneP_manyC.java](src/main/java/com/brianway/learning/java/multithread/communication/example11/Run11_oneP_manyC.java):一生产与多消费
+- [example12](src/main/java/com/brianway/learning/java/multithread/communication/example12)
+    - [Run12_pipeInputOutput.java](src/main/java/com/brianway/learning/java/multithread/communication/example12/Run12_pipeInputOutput.java):通过管道进行线程间通信：字节流
+- [example13](src/main/java/com/brianway/learning/java/multithread/communication/example13)
+    - [Run13_wait_notify_insert.java](src/main/java/com/brianway/learning/java/multithread/communication/example13/Run13_wait_notify_insert.java):等待/通知，交叉执行
+- [example14](src/main/java/com/brianway/learning/java/multithread/communication/example14)
+    - [Run14_join.java](src/main/java/com/brianway/learning/java/multithread/communication/example14/Run14_join.java):`join` 示例
+    - [Run14_joinExption.java](src/main/java/com/brianway/learning/java/multithread/communication/example14/Run14_joinExption.java):`join` 的异常
+    - [Run14_joinLong.java](src/main/java/com/brianway/learning/java/multithread/communication/example14/Run14_joinLong.java):`join(long)` 设定等待的时间,`join(long)` 和 `sleep(long)` 运行效果并无区别，但对同步的处理不同
+- [example15](src/main/java/com/brianway/learning/java/multithread/communication/example15)
+    - [Run15_join_sleep.java](src/main/java/com/brianway/learning/java/multithread/communication/example15/Run15_join_sleep.java):`join(long)` 和 `sleep(long)` 的区别,`sleep(long)` 方法不释放锁
+    - [Run15_join_sleep_2.java](src/main/java/com/brianway/learning/java/multithread/communication/example15/Run15_join_sleep_2.java):`join(long)` 和 `sleep(long)` 的区别,`join(long)` 释放锁
+    - [Run15_joinMore.java](src/main/java/com/brianway/learning/java/multithread/communication/example15/Run15_joinMore.java):方法 `join` 后面的代码提前运行
+- [example16](src/main/java/com/brianway/learning/java/multithread/communication/example16)
+    - [Run16_InheritableThreadLocalExt.java](src/main/java/com/brianway/learning/java/multithread/communication/example16/Run16_InheritableThreadLocalExt.java):类 `InheritableThreadLocal` 使用，值继承，子线程从父线程取得值
+    - [Run16_InheritableThreadLocalExt2.java](src/main/java/com/brianway/learning/java/multithread/communication/example16/Run16_InheritableThreadLocalExt2.java):类 `InheritableThreadLocal` 使用，值继承再更改
+    - [Run16_ThreadLocal.java](src/main/java/com/brianway/learning/java/multithread/communication/example16/Run16_ThreadLocal.java):验证线程变量的隔离性
+  
+
+## lock
+
+- [example1](src/main/java/com/brianway/learning/java/multithread/lock/example1)
+    - [Run1_UseConditionWaitNotify.java](src/main/java/com/brianway/learning/java/multithread/lock/example1/Run1_UseConditionWaitNotify.java):使用 Condition 实现等待通知,Condition 对象的 `await()`方法，线程`WAITING`
+    - [Run1_UseConditionWaitNotifyError.java](src/main/java/com/brianway/learning/java/multithread/lock/example1/Run1_UseConditionWaitNotifyError.java):`IllegalMonitorStateException`，监视器出错
+    - [Run1_UseConditionWaitNotifyOk.java](src/main/java/com/brianway/learning/java/multithread/lock/example1/Run1_UseConditionWaitNotifyOk.java):正确使用Condition实现等待通知
+- [example2](src/main/java/com/brianway/learning/java/multithread/lock/example2)
+    - [Run2_MustUseMoreCondition.java](src/main/java/com/brianway/learning/java/multithread/lock/example2/Run2_MustUseMoreCondition.java):使用多个 condition 实现通知部分线程
+- [example3](src/main/java/com/brianway/learning/java/multithread/lock/example3)
+    - [Run3_ConditionManyToMany.java](src/main/java/com/brianway/learning/java/multithread/lock/example3/Run3_ConditionManyToMany.java):实现生产者/消费者模式，多对多交替打印
+- [example4](src/main/java/com/brianway/learning/java/multithread/lock/example4)
+    - [Run4_Fair.java](src/main/java/com/brianway/learning/java/multithread/lock/example4/Run4_Fair.java):公平锁测试,打印结果呈有序状态
+    - [Run4_notFair.java](src/main/java/com/brianway/learning/java/multithread/lock/example4/Run4_notFair.java):非公平锁测试,打印结果乱序，先启动的线程不一定先获得锁
+- [example5](src/main/java/com/brianway/learning/java/multithread/lock/example5)
+    - [Run5_getHoldCount.java](src/main/java/com/brianway/learning/java/multithread/lock/example5/Run5_getHoldCount.java):测试方法 `int getHoldCount()` 
+    - [Run5_getQueueLength.java](src/main/java/com/brianway/learning/java/multithread/lock/example5/Run5_getQueueLength.java):测试方法 `int getQueueLength()` 
+    - [Run5_getWaitQueueLength.java](src/main/java/com/brianway/learning/java/multithread/lock/example5/Run5_getWaitQueueLength.java):测试方法 `int getWaitQueueLength(Condition condition)`
+- [example6](src/main/java/com/brianway/learning/java/multithread/lock/example6)
+    - [Run6_hasQueueThread.java](src/main/java/com/brianway/learning/java/multithread/lock/example6/Run6_hasQueueThread.java):测试方法 `boolean hasQueueThread(Thread thread)` 和 `boolean hasQueueThreads()`
+    - [Run6_hasWaiters.java](src/main/java/com/brianway/learning/java/multithread/lock/example6/Run6_hasWaiters.java):测试方法 `boolean hasWaiters(Condition)` 
+- [example7](src/main/java/com/brianway/learning/java/multithread/lock/example7)
+    - [Run7_isFair.java](src/main/java/com/brianway/learning/java/multithread/lock/example7/Run7_isFair.java):测试方法 `boolean isFair()`
+    - [Run7_isHeldByCurrentThread.java](src/main/java/com/brianway/learning/java/multithread/lock/example7/Run7_isHeldByCurrentThread.java):测试方法 `boolean isHeldByCurrentThread()`
+    - [Run7_isLocked.java](src/main/java/com/brianway/learning/java/multithread/lock/example7/Run7_isLocked.java):测试方法 `boolean isLocked()`
+- [example8](src/main/java/com/brianway/learning/java/multithread/lock/example8)
+    - [Run8_lockInterruptibly1.java](src/main/java/com/brianway/learning/java/multithread/lock/example8/Run8_lockInterruptibly1.java):测试方法 `void lockInterruptibly()`
+    - [Run8_lockInterruptibly2.java](src/main/java/com/brianway/learning/java/multithread/lock/example8/Run8_lockInterruptibly2.java):测试方法 `void lockInterruptibly()`
+    - [Run8_tryLock.java](src/main/java/com/brianway/learning/java/multithread/lock/example8/Run8_tryLock.java):测试方法 `boolean tryLock()`
+    - [Run8_tryLock_param.java](src/main/java/com/brianway/learning/java/multithread/lock/example8/Run8_tryLock_param.java):测试方法 `boolean tryLock(long timeout,TimeUnit unit)`
+- [example9](src/main/java/com/brianway/learning/java/multithread/lock/example9)
+    - [Run9_awaitUniterruptibly1.java](src/main/java/com/brianway/learning/java/multithread/lock/example9/Run9_awaitUniterruptibly1.java):测试方法 `awaitUniterruptibly()`
+    - [Run9_awaitUniterruptibly2.java](src/main/java/com/brianway/learning/java/multithread/lock/example9/Run9_awaitUniterruptibly2.java):测试方法 `awaitUniterruptibly()`
+    - [Run9_awaitUntil1.java](src/main/java/com/brianway/learning/java/multithread/lock/example9/Run9_awaitUntil1.java):测试方法 `awaitUntil()`
+    - [Run9_awaitUntil2.java](src/main/java/com/brianway/learning/java/multithread/lock/example9/Run9_awaitUntil2.java):测试方法 `awaitUntil()`
+- [example10](src/main/java/com/brianway/learning/java/multithread/lock/example10)
+    - [Run10_condition.java](src/main/java/com/brianway/learning/java/multithread/lock/example10/Run10_condition.java):Condition 实现顺序打印
+    - [Run10_ReadWriteLockBegin1.java](src/main/java/com/brianway/learning/java/multithread/lock/example10/Run10_ReadWriteLockBegin1.java):类 `ReentrantReadWriteLock` 的使用：读读共享
+    - [Run10_ReadWriteLockBegin2.java](src/main/java/com/brianway/learning/java/multithread/lock/example10/Run10_ReadWriteLockBegin2.java):类 `ReentrantReadWriteLock` 的使用：写写互斥
+    - [Run10_ReadWriteLockBegin3.java](src/main/java/com/brianway/learning/java/multithread/lock/example10/Run10_ReadWriteLockBegin3.java):类 `ReentrantReadWriteLock` 的使用：读写互斥

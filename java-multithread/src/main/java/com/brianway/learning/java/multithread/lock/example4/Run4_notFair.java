@@ -7,7 +7,7 @@ package com.brianway.learning.java.multithread.lock.example4;
 /**
  * P218
  * 非公平锁测试
- * 打印结果乱序，县启动的线程不一定先获得锁
+ * 打印结果乱序，先启动的线程不一定先获得锁
  */
 public class Run4_notFair {
     public static void main(String[] args) {

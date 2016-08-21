@@ -6,8 +6,8 @@ package com.brianway.learning.java.multithread.lock.example5;
 
 /**
  * P221
- * 测试int getWaitQueueLength(Condition condition)方法
- * 返回等待与此锁定相关的给定条件Conditon的线程估计数
+ * 测试方法int getWaitQueueLength(Condition condition)
+ * 返回等待与此锁定相关的给定条件Condition的线程估计数
  */
 public class Run5_getWaitQueueLength {
     public static void main(String[] args) throws InterruptedException {

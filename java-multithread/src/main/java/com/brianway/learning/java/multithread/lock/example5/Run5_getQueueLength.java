@@ -6,7 +6,7 @@ package com.brianway.learning.java.multithread.lock.example5;
 
 /**
  * P220
- * 测试int getQueueLength()方法
+ * 测试方法int getQueueLength()
  * 返回正在等待获取此锁定的线程估计数
  */
 public class Run5_getQueueLength {

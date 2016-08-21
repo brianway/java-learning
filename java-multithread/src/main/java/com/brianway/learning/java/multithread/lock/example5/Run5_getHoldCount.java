@@ -6,7 +6,7 @@ package com.brianway.learning.java.multithread.lock.example5;
 
 /**
  * P219
- * 测试int getHoldCount()方法
+ * 测试方法int getHoldCount()
  * 查询当前线程保持此锁定的个数，即调用lock()方法的次数
  */
 public class Run5_getHoldCount {

@@ -6,9 +6,9 @@ package com.brianway.learning.java.multithread.lock.example6;
 
 /**
  * P222
- * 测试boolean hasQueueThread(Thread thread)
+ * 测试方法boolean hasQueueThread(Thread thread)
  * 查询指定的线程是否正在等待获取此锁定
- * 测试boolean hasQueueThreads()
+ * 测试方法boolean hasQueueThreads()
  * 查询是否有线程正在等待获取此锁定
  */
 public class Run6_hasQueueThread {

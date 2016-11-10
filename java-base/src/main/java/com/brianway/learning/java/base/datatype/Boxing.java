@@ -1,13 +1,11 @@
-package com.brianway.learning.java.base;
+package com.brianway.learning.java.base.datatype;
 
 /**
  * Created by Brian on 2016/4/14.
- */
-
-/**
- * TODO
- * 待理解。
- * 应该是考装箱和拆箱
+ *
+ * TODO 有些细节待理解
+ *
+ * 主要是考装箱和拆箱
  */
 public class Boxing {
     public static void main(String[] args) {
@@ -24,16 +22,19 @@ public class Boxing {
         System.out.println(c.equals(a + b));
         System.out.println(g == (a + b));
         System.out.println(g.equals(a + b));
+        System.out.println(new Integer(2) == new Integer(2));
 
     }
 }
 
 /*
-输出：
+输出：               原因:
+true                自动装箱,缓存
+false               自动装箱,未缓存
+true
+true                调用 equals(),比较的是值,而不是对象地址
 true
 false
-true
-true
-true
-false
+false               比较的是对象地址
+
  */

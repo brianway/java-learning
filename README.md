@@ -16,7 +16,7 @@
 **点击相应的模块能看到每个目录的说明文档**
 
 - [blogs](/blogs):博客文档
-- [java-base](/java-base):java基础巩固模块的 java 源码
+- [java-base](/java-base):java 基础巩固模块的 java 源码
 - [java-multithread](/java-multithread):多线程模块的 java 源码
 
 
@@ -60,8 +60,8 @@
 * [x] 整理成 maven 的结构，使用聚合和继承特性(2016.4.12完成)
 * [ ] 原有的 javase 部分代码重构为 java-base 模块，并逐步上传代码
 * [x] 多线程部分使用 java-multithread 模块(2016.4.17完成)
-* [ ] 集合类部分使用模块 java-collections
-* [ ] IO部分使用模块java-io
+* [ ] 容器类部分使用模块 java-container
+* [ ] IO 部分使用模块 java-io
 * [ ] java虚拟机相关部分使用模块 java-jvm
 * [ ] java 8 新特性使用模块 java8
 

@@ -1,6 +1,6 @@
 # 我的java学习笔记
 
-旨在打造在线最佳的 java 学习笔记,笔记内容主要是对一些基础特性和编程细节进行总结整理，适合了解 java 基础语法，想进一步深入学习的人
+旨在打造在线最佳的 java 学习笔记，笔记内容主要是对一些基础特性和编程细节进行总结整理，适合了解 java 基础语法，想进一步深入学习的人
 
 含**博客讲解**和**源码实例**，采用 maven 构建，分模块学习，涉及反射，代理，多线程，IO，集合类等核心知识。
 
@@ -18,7 +18,7 @@
 - [blogs](/blogs):博客文档
 - [java-base](/java-base):java 基础巩固模块的 java 源码
 - [java-multithread](/java-multithread):多线程模块的 java 源码
-
+- [java-container](/java-container):容器类模块的 java 源码
 
 
 # 博客文档

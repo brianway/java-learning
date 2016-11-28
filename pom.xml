@@ -47,6 +47,7 @@
         <module>java-multithread</module>
         <module>java-base</module>
         <module>java-container</module>
+        <module>java-io</module>
     </modules>
 
     <dependencyManagement>

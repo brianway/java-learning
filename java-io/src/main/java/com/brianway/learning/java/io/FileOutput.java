@@ -48,7 +48,7 @@ public class FileOutput {
     }
 
     public static void main(String[] args) throws IOException {
-        String parent = BufferedInputFile.class.getResource("/").getPath();
+        String parent = FileOutput.class.getResource("/").getPath();
         String infile = parent + "/infile.txt";
 
         String outfile = parent + "/BasicOut";

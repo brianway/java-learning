@@ -86,7 +86,7 @@ public class TextFile extends ArrayList<String> {
 
     // Simple test:
     public static void main(String[] args) {
-        String parent = BufferedInputFile.class.getResource("/").getPath();
+        String parent = TextFile.class.getResource("/").getPath();
         String inFileName = parent + "/infile.txt";
 
         String file = read(inFileName);

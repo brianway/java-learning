@@ -47,7 +47,7 @@ public class MemoryInput {
 
     public static void main(String[] args)
             throws IOException {
-        String filename = BufferedInputFile.class.getResource("/").getPath()
+        String filename = MemoryInput.class.getResource("/").getPath()
                 + "/infile.txt";
         useStringReader(filename);
         readFormattedInput(filename);

@@ -33,7 +33,7 @@ public class FileOutput {
     /**
      * 文本文件输出的快捷方式
      */
-    public static void shortcut(String infile, String outfile)throws IOException{
+    public static void shortcut(String infile, String outfile) throws IOException {
         BufferedReader in = new BufferedReader(
                 new StringReader(
                         BufferedInputFile.read(infile)));
@@ -54,7 +54,7 @@ public class FileOutput {
         String outfile = parent + "/BasicOut";
         basic(infile, outfile);
 
-        outfile = parent+"ShortcutOut";
-        shortcut(infile,outfile);
+        outfile = parent + "ShortcutOut";
+        shortcut(infile, outfile);
     }
 }

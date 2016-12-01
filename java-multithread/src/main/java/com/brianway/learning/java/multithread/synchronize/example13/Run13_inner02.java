@@ -8,6 +8,12 @@ package com.brianway.learning.java.multithread.synchronize.example13;
  *
  * T1和T3竞争in2的锁。只有T1结束，T3才能开始；或者T3结束，T1才能开始
  * T2与另外两个没关系，因为其锁对象是in2
+ *
+ * P112
+ * 内置类与同步测试2
+ *
+ * T1和T3竞争in2的锁。只有T1结束，T3才能开始；或者T3结束，T1才能开始
+ * T2与另外两个没关系，因为其锁对象是in2
  */
 
 /**

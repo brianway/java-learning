@@ -8,6 +8,9 @@ import java.util.function.IntSupplier;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+/**
+ * 斐波拉切数列的几种生成方法
+ */
 public class BuildingStreams {
 
     public static void main(String... args) throws Exception {
@@ -48,11 +51,8 @@ public class BuildingStreams {
                 .limit(5)
                 .forEach(System.out::println);
 
-        IntStream.generate(new IntSupplier() {
-            public int getAsInt() {
-                return 2;
-            }
-        }).limit(5)
+        IntStream.generate(() -> 2)
+                .limit(5)
                 .forEach(System.out::println);
 
         IntSupplier fib = new IntSupplier() {

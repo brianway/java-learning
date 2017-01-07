@@ -8,6 +8,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 分别使用指令式和函数式进行分组
+ */
 public class GroupingTransactions {
 
     public static List<Transaction> transactions = Arrays.asList(

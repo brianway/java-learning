@@ -8,6 +8,9 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * 指令式和函数式分别挑选低热量食物名
+ */
 public class StreamBasic {
 
     public static void main(String... args) {

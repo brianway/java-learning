@@ -8,7 +8,8 @@ import java.util.function.Predicate;
 /**
  * Created by brian on 16/12/26.
  *
- *
+ * 传递代码的例子
+ * 分别使用了方法引用和Lambda(匿名函数)
  */
 public class FilteringApples {
     public static void main(String[] args) {
@@ -30,6 +31,13 @@ public class FilteringApples {
 
     }
 
+    /**
+     * 根据抽象条件筛选
+     * 将迭代集合的逻辑和要应用到集合中每个元素的行为区分开
+     * @param inventory
+     * @param p
+     * @return
+     */
     public static List<Apple> filter(List<Apple> inventory, Predicate<Apple> p) {
         List<Apple> result = new ArrayList<>();
         for (Apple apple : inventory) {

@@ -32,7 +32,7 @@
 
 **博客目录**
 
-- [javase](/blogs/javase)
+- [Java SE](/blogs/javase)
   - [java基础巩固笔记(1)-反射.md](/blogs/javase/java基础巩固笔记(1)-反射.md)
   - [java基础巩固笔记(2)-泛型.md](/blogs/javase/java基础巩固笔记(2)-泛型.md)
   - [java基础巩固笔记(3)-类加载器.md](/blogs/javase/java基础巩固笔记(3)-类加载器.md)
@@ -42,7 +42,7 @@
   - [java基础巩固笔记(5)-多线程之共享数据.md](/blogs/javase/java基础巩固笔记(5)-多线程之共享数据.md)
   - [java基础巩固笔记(5)-多线程之线程并发库.md](/blogs/javase/java基础巩固笔记(5)-多线程之线程并发库.md)
   - [java基础巩固笔记(6)-注解.md](/blogs/javase/java基础巩固笔记(6)-注解.md)
-- [javaweb](/blogs/javaweb)
+- [Java Web](/blogs/javaweb)
   - [javaweb入门笔记(1)-Tomcat.md](/blogs/javaweb/javaweb入门笔记(1)-Tomcat.md)
   - [javaweb入门笔记(2)-http入门.md](/blogs/javaweb/javaweb入门笔记(2)-http入门.md)
   - [javaweb入门笔记(3)-Servlet.md](/blogs/javaweb/javaweb入门笔记(3)-Servlet.md)
@@ -64,7 +64,7 @@
 * [ ] 容器类部分使用模块 java-container
 * [ ] IO 部分使用模块 java-io
 * [ ] Java 虚拟机相关部分使用模块 java-jvm
-* [ ] Java 8 新特性使用模块 java8
+* [ ] Java 8 新特性使用模块 java8(正在进行)
 
 
 -----

@@ -6,8 +6,11 @@
 
 ## lambda 表达式
 
-- FilteringApples: 传递代码的例子,展示方法引用和Lambda
+- FilteringApples: 传递代码的例子,展示方法引用和 Lambda
 
 
 ## steam API
 
+- Dish: 
+- StreamBasic: 指令式和函数式分别挑选低热量食物名
+- StreamOperation: 流操作:中间操作和终端操作

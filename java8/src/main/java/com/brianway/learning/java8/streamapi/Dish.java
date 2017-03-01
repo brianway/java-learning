@@ -3,6 +3,9 @@ package com.brianway.learning.java8.streamapi;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 菜肴类
+ */
 public class Dish {
 
     private final String name;
@@ -44,6 +47,9 @@ public class Dish {
         return name;
     }
 
+    /**
+     * 菜肴列表
+     */
     public static final List<Dish> menu =
             Arrays.asList(new Dish("pork", false, 800, Dish.Type.MEAT),
                     new Dish("beef", false, 700, Dish.Type.MEAT),

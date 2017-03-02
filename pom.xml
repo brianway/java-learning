@@ -51,6 +51,7 @@
         <module>java-container</module>
         <module>java-io</module>
         <module>java8</module>
+        <module>java-jvm</module>
     </modules>
 
     <dependencyManagement>

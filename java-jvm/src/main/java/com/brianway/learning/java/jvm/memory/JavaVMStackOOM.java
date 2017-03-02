@@ -1,4 +1,4 @@
-package com.brianway.learning.java.jvm;
+package com.brianway.learning.java.jvm.memory;
 
 /**
  * Created by brian on 17/3/1.
@@ -34,8 +34,8 @@ Java HotSpot(TM) 64-Bit Server VM warning: Exception java.lang.OutOfMemoryError 
 Exception in thread "main" java.lang.OutOfMemoryError: unable to create new native thread
 	at java.lang.Thread.start0(Native Method)
 	at java.lang.Thread.start(Thread.java:714)
-	at com.brianway.learning.java.jvm.JavaVMStackOOM.stackLeakByThread(JavaVMStackOOM.java:22)
-	at com.brianway.learning.java.jvm.JavaVMStackOOM.main(JavaVMStackOOM.java:28)
+	at com.brianway.learning.java.jvm.memory.JavaVMStackOOM.stackLeakByThread(JavaVMStackOOM.java:22)
+	at com.brianway.learning.java.jvm.memory.JavaVMStackOOM.main(JavaVMStackOOM.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

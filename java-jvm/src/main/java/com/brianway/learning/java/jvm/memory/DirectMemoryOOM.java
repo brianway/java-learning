@@ -1,4 +1,4 @@
-package com.brianway.learning.java.jvm;
+package com.brianway.learning.java.jvm.memory;
 
 import sun.misc.Unsafe;
 

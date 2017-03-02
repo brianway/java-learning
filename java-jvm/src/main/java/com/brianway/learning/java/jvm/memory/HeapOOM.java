@@ -1,4 +1,4 @@
-package com.brianway.learning.java.jvm;
+package com.brianway.learning.java.jvm.memory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,7 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 	at java.util.ArrayList.ensureExplicitCapacity(ArrayList.java:235)
 	at java.util.ArrayList.ensureCapacityInternal(ArrayList.java:227)
 	at java.util.ArrayList.add(ArrayList.java:458)
-	at com.brianway.learning.java.jvm.HeapOOM.main(HeapOOM.java:19)
+	at com.brianway.learning.java.jvm.memory.HeapOOM.main(HeapOOM.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

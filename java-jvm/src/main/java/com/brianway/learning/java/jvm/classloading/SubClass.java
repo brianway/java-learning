@@ -1,4 +1,4 @@
-package com.brianway.learning.java.jvm.classfile;
+package com.brianway.learning.java.jvm.classloading;
 
 /**
  * Created by brian on 17/3/19.

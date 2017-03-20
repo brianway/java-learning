@@ -20,6 +20,8 @@
 - [java-multithread](/java-multithread):多线程模块的 Java 源码
 - [java-container](/java-container):容器类模块的 Java 源码
 - [java-io](/java-io):IO 模块的 Java 源码
+- [java-jvm](/java-jvm): JVM 模块的 Java 源码
+- [java8](/java8): Java 8 模块的源码
 
 
 # 博客文档
@@ -58,12 +60,12 @@
 
 计划将这个仓库进行重构，逐步扩充并实现下面的功能。
 
-* [x] 整理成 maven 的结构，使用聚合和继承特性(2016.4.12完成)
+* [x] 整理成 maven 的结构，使用聚合和继承特性(2016.4.12 完成)
 * [ ] 原有的 Java SE 部分代码重构为 java-base 模块，并逐步上传代码
-* [x] 多线程部分使用 java-multithread 模块(2016.4.17完成雏形)
+* [x] 多线程部分使用 java-multithread 模块(2016.4.17 完成雏形)
 * [ ] 容器类部分使用模块 java-container
 * [ ] IO 部分使用模块 java-io
-* [ ] Java 虚拟机相关部分使用模块 java-jvm
+* [x] Java 虚拟机相关部分使用模块 java-jvm(2017.3.20 完成雏形)
 * [ ] Java 8 新特性使用模块 java8(正在进行)
 
 

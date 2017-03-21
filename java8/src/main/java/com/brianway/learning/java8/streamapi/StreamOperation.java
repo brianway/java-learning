@@ -26,5 +26,9 @@ public class StreamOperation {
                 .limit(3)
                 .collect(Collectors.toList());
         System.out.println(names);
+
+        //forEach 是一个返回 void 的终端操作
+        System.out.println("------forEach-------");
+        menu.stream().forEach(System.out::println);
     }
 }

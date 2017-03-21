@@ -1,4 +1,4 @@
-package com.brianway.learning.java8.streamapi;
+package com.brianway.learning.java8.streamapi.practice;
 
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
@@ -6,6 +6,9 @@ import static java.util.stream.Collectors.toList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 各种流操作的使用示例
+ */
 public class PuttingIntoPractice {
     public static void main(String... args) {
         Trader raoul = new Trader("Raoul", "Cambridge");

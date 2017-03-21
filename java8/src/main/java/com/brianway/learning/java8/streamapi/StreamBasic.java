@@ -24,6 +24,9 @@ public class StreamBasic {
 
     }
 
+    /**
+     * 指令式
+     */
     public static List<String> getLowCaloricDishesNamesInJava7(List<Dish> dishes) {
         List<Dish> lowCaloricDishes = new ArrayList<>();
         for (Dish d : dishes) {
@@ -43,6 +46,9 @@ public class StreamBasic {
         return lowCaloricDishesName;
     }
 
+    /**
+     * 函数式
+     */
     public static List<String> getLowCaloricDishesNamesInJava8(List<Dish> dishes) {
         return dishes.stream()
                 .filter(d -> d.getCalories() < 400)

@@ -1,5 +1,6 @@
-package com.brianway.learning.java8.streamapi;
+package com.brianway.learning.java8.streamapi.usage;
 
+import com.brianway.learning.java8.streamapi.Dish;
 import static com.brianway.learning.java8.streamapi.Dish.menu;
 import static java.util.stream.Collectors.toList;
 
@@ -9,6 +10,7 @@ import java.util.List;
 /**
  * 使用流-映射
  * 注意扁平映射
+ * flatMap 的效果:各个数组不是分别映射成一个流,而是映射成 流的内容
  */
 public class Mapping {
 
@@ -44,5 +46,15 @@ public class Mapping {
                         .filter(pair -> (pair[0] + pair[1]) % 3 == 0)
                         .collect(toList());
         pairs.forEach(pair -> System.out.println("(" + pair[0] + ", " + pair[1] + ")"));
+
+        // flatMap
+        List<int[]> pairs2 = numbers1.stream()
+                .flatMap(i -> numbers2.stream()
+                        .filter(j -> (i + j) % 3 == 0)
+                        .map(j -> new int[] {i, j})
+                )
+                .collect(toList());
+        System.out.println("----------");
+        pairs2.forEach(pair -> System.out.println("(" + pair[0] + ", " + pair[1] + ")"));
     }
 }

@@ -1,4 +1,4 @@
-package com.brianway.learning.java8.streamapi;
+package com.brianway.learning.java8.streamapi.collect;
 
 import static java.util.stream.Collector.Characteristics.IDENTITY_FINISH;
 import static java.util.stream.Collectors.partitioningBy;
@@ -39,6 +39,9 @@ public class PartitionPrimeNumbers {
                 .collect(partitioningBy(PartitionPrimeNumbers::isPrime));
     }
 
+    /**
+     * 判断一个数是不是质数
+     */
     public static boolean isPrime(int candidate) {
         return IntStream.rangeClosed(2, candidate - 1)
                 .limit((long) Math.floor(Math.sqrt((double) candidate)) - 1)
@@ -49,12 +52,22 @@ public class PartitionPrimeNumbers {
         return IntStream.rangeClosed(2, n).boxed().collect(new PrimeNumbersCollector());
     }
 
+    /**
+     * 仅用质数作除数
+     *
+     * @param primes 部分结果
+     * @param candidate 要判断的数
+     * @return
+     */
     public static boolean isPrime(List<Integer> primes, Integer candidate) {
         double candidateRoot = Math.sqrt((double) candidate);
         //return primes.stream().filter(p -> p < candidateRoot).noneMatch(p -> candidate % p == 0);
         return takeWhile(primes, i -> i <= candidateRoot).stream().noneMatch(i -> candidate % i == 0);
     }
 
+    /**
+     * 返回元素满足谓词的最长前缀
+     */
     public static <A> List<A> takeWhile(List<A> list, Predicate<A> p) {
         int i = 0;
         for (A item : list) {

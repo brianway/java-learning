@@ -1,4 +1,4 @@
-package com.brianway.learning.java8.streamapi;
+package com.brianway.learning.java8.streamapi.collect;
 
 import static java.util.stream.Collectors.groupingBy;
 

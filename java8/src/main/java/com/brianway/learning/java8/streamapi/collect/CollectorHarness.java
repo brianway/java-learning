@@ -1,4 +1,4 @@
-package com.brianway.learning.java8.streamapi;
+package com.brianway.learning.java8.streamapi.collect;
 
 import java.util.function.Consumer;
 

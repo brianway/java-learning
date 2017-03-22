@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- *筛选
+ * 筛选
  * - 谓词筛选：filter
  * - 筛选互异的元素：distinct
  * - 忽略头几个元素：limit

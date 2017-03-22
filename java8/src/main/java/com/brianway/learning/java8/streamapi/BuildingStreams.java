@@ -9,12 +9,16 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
+ * 构建流:从值序列,数组,文件来创建流
  * 斐波拉切数列的几种生成方法
  */
 public class BuildingStreams {
 
     public static void main(String... args) throws Exception {
 
+        /**
+         * 由值创建流
+         */
         // Stream.of
         Stream<String> stream = Stream.of("Java 8", "Lambdas", "In", "Action");
         stream.map(String::toUpperCase).forEach(System.out::println);
@@ -22,10 +26,16 @@ public class BuildingStreams {
         // Stream.empty
         Stream<String> emptyStream = Stream.empty();
 
+        /**
+         * 由数组创建流
+         */
         // Arrays.stream
         int[] numbers = {2, 3, 5, 7, 11, 13};
         System.out.println(Arrays.stream(numbers).sum());
 
+        /**
+         * 由函数生成流：创建无限流
+         */
         // Stream.iterate
         Stream.iterate(0, n -> n + 2)
                 .limit(10)
@@ -68,6 +78,9 @@ public class BuildingStreams {
         };
         IntStream.generate(fib).limit(10).forEach(System.out::println);
 
+        /**
+         * 由文件生成流
+         */
         String path = BuildingStreams.class.getResource("/").getPath() + "/data-building.txt";
         long uniqueWords = Files.lines(Paths.get(path), Charset.defaultCharset())
                 .flatMap(line -> Arrays.stream(line.split(" ")))

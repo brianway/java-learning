@@ -1,8 +1,12 @@
-package com.brianway.learning.java8.streamapi;
+package com.brianway.learning.java8.streamapi.collect;
 
+import com.brianway.learning.java8.streamapi.Dish;
 import static com.brianway.learning.java8.streamapi.Dish.menu;
 import static java.util.stream.Collectors.reducing;
 
+/**
+ * 收集器的灵活性,以不同的方法执行相同的操作
+ */
 public class Reducing {
 
     public static void main(String... args) {

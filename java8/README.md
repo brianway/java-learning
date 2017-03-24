@@ -45,3 +45,13 @@
 - ParallelStreams: 并行流计算 1~n 的和,分别使用指令式,串行迭代流,并行迭代流,基本类型流,有副作用的流
 - ForkJoinSumCalculator: 使用分支/合并框架执行并行求和
 - WordCount: Spliterator: splitable iterator
+
+## 高效 Java 8 编程
+
+- StrategyMain: 策略模式
+- TemplateMain: 模版方法
+- ObserverMain: 观察者模式
+- ChainOfResponsibilityMain: 责任链模式
+- FactoryMain: 工厂模式
+- Debugging: 查看栈跟踪
+- Peek: 使用日志调试

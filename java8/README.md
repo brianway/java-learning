@@ -39,6 +39,9 @@
 - CollectorHarness: 比较收集器的性能
 
 
+并行数据处理
 
-
-
+- ParallelStreamsHarness: 测量流性能
+- ParallelStreams: 并行流计算 1~n 的和,分别使用指令式,串行迭代流,并行迭代流,基本类型流,有副作用的流
+- ForkJoinSumCalculator: 使用分支/合并框架执行并行求和
+- WordCount: Spliterator: splitable iterator

@@ -3,6 +3,9 @@ package com.brianway.learning.java8.streamapi.parallel;
 import java.util.concurrent.ForkJoinPool;
 import java.util.function.Function;
 
+/**
+ * 测量流性能
+ */
 public class ParallelStreamsHarness {
 
     public static final ForkJoinPool FORK_JOIN_POOL = new ForkJoinPool();

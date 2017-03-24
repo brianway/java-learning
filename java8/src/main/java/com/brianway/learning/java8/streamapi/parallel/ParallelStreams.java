@@ -9,6 +9,9 @@ import java.util.stream.Stream;
  */
 public class ParallelStreams {
 
+    /**
+     * for 循环的迭代
+     */
     public static long iterativeSum(long n) {
         long result = 0;
         for (long i = 0; i <= n; i++) {
@@ -21,10 +24,20 @@ public class ParallelStreams {
         return Stream.iterate(1L, i -> i + 1).limit(n).reduce(Long::sum).get();
     }
 
+    /**
+     * iterate 的问题:
+     * - iterate 生成的是装箱的对象,必须拆成数字才能求和
+     * - 很难把 iterate 分成多个独立块来并行执行
+     */
     public static long parallelSum(long n) {
         return Stream.iterate(1L, i -> i + 1).limit(n).parallel().reduce(Long::sum).get();
     }
 
+    /**
+     * 使用 LongStream.rangeClosed
+     * - 没有装箱拆箱
+     * - 容易拆分为独立的小块
+     */
     public static long rangedSum(long n) {
         return LongStream.rangeClosed(1, n).reduce(Long::sum).getAsLong();
     }
@@ -39,6 +52,9 @@ public class ParallelStreams {
         return accumulator.total;
     }
 
+    /**
+     * 共享了可变状态,导致每次结果不一致
+     */
     public static long sideEffectParallelSum(long n) {
         Accumulator accumulator = new Accumulator();
         LongStream.rangeClosed(1, n).parallel().forEach(accumulator::add);

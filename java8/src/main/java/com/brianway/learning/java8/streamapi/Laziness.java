@@ -15,7 +15,8 @@ public class Laziness {
         List<Integer> twoEvenSquares =
                 numbers.stream()
                         .filter(n -> {
-                            System.out.println("filtering " + n); return n % 2 == 0;
+                            System.out.println("filtering " + n);
+                            return n % 2 == 0;
                         })
                         .map(n -> {
                             System.out.println("mapping " + n);

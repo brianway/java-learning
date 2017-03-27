@@ -34,6 +34,7 @@ public class FilteringApples {
     /**
      * 根据抽象条件筛选
      * 将迭代集合的逻辑和要应用到集合中每个元素的行为区分开
+     *
      * @param inventory
      * @param p
      * @return

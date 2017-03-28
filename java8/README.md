@@ -64,3 +64,20 @@ Optional
 - OptionalMain: ptional 用法(map,flatMap,filter)
 - OptionalInAction:  使用 Optional 实战示例
 - ReadPositiveIntParam: 使用 Optional 示例
+
+CompletableFuture
+
+- v1/Shop: 商店类第一版,没有折扣
+- v1/ShopMain: 使用异步 API 的使用示例
+- v1/BestPriceFinder: 通过不同的方案实现价格查询:顺序流,并行流,CompletableFuture
+- v1/BestPriceFinderMain: 测试每种实现方案的执行时间
+
+- AsyncShop: 使用工厂方法 supplyAsync 创建 CompletableFuture
+- AsyncShopClient: 演示错误处理
+- ExchangeService: 货币兑换类
+- Discount: 折扣类
+- Quote: 解析商店返回的字符串
+- Shop: 商店类,报价按照 `name:price:code` 的格式
+- BestPriceFinder: 添加折扣后的版本
+- BestPriceFinderMain: 测试每种实现方案的执行时间
+

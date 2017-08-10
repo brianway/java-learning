@@ -132,7 +132,7 @@ hashcode与内存泄露问题
 
 ---
 
-## 内省(Instropector) & JavaBean
+## 内省(Introspector) & JavaBean
 JavaBean读取属性x的值的流程：变大写、补前缀、获取方法。
 
 ```

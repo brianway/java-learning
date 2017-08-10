@@ -17,6 +17,8 @@ public class FatherClass {
 
     public FatherClass(String name) {
         this.name = name;
+        System.out.println("我是来试试怎么pullrequest的(⊙o⊙)…");
         System.out.println("执行了父类的构造方法FatherClass(String name) " + name);
+    
     }
 }

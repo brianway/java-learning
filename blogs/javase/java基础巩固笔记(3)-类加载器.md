@@ -69,7 +69,7 @@ Exception in thread "main" java.lang.NullPointerException
 
 - 首先当前线程的类加载器去加载线程中的第一个类
 - 如果类A应用了类B，java虚拟机将使用加载类A的类加载器来加载类B
-- 还可以直接调用ClassLoader.loadClass()方法来制定某个类加载器去加载某个类
+- 还可以直接调用ClassLoader.loadClass()方法来指定某个类加载器去加载某个类
 
 -------------------
 

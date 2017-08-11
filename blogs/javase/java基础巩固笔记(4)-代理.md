@@ -239,13 +239,13 @@ com.sun.proxy.$Proxy0
 
 ### 动态代理的工作原理
 
-代理类创建时需要传入一个InvocationHandler对象，client调用代理类，代理类的相应方法调用InvocationHandler的的invoke方法，InvocationHandler的的invoke方法(可在其中加入日志记录、时间统计等附加功能)再找目标类的相应方法。
+代理类创建时需要传入一个InvocationHandler对象，client调用代理类，代理类的相应方法调用InvocationHandler的invoke方法，InvocationHandler的的invoke方法(可在其中加入日志记录、时间统计等附加功能)再找目标类的相应方法。
 
 ![动态代理的工作原理图](http://7xph6d.com1.z0.glb.clouddn.com/javaSE_%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%9B%BE.jpg)
 
 ### 面向切面编程
 
-把切面的代码以**对象**的形式传递给InvocationHandler的的invoke方法，invoke方法中执行该对象的方法就执行了切面的代码。
+把切面的代码以**对象**的形式传递给InvocationHandler的invoke方法，invoke方法中执行该对象的方法就执行了切面的代码。
     
 所以需要传递两个参数：
 

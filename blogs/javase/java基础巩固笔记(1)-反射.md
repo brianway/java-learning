@@ -92,10 +92,10 @@ hashcode与内存泄露问题
 参考java api：
 
 >* hashcode一旦生成，不要变
->* 对象equals方法返回true,则hascode要一致
->* 反之，equals方法返回false,hascode不一定互异
+>* 对象equals方法返回true,则hashcode要一致
+>* 反之，equals方法返回false,hashcode不一定互异
 
-如果参与hascode计算的成员变量中途发生变化，则后面remove时失败，造成内存泄露
+如果参与hashcode计算的成员变量中途发生变化，则后面remove时失败，造成内存泄露
 
 
 ----

@@ -25,7 +25,7 @@ public class SonClass extends FatherClass {
     }
 
     public static void main(String[] args) {
-        new SonClass("aaa");
+       // new SonClass("aaa");
         new SonClass();
     }
 

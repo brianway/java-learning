@@ -28,7 +28,7 @@ public class DoubleCheckLockSingleton {
 
     public  void get(){
         synchronized (this){
-            System.out.println("曹麒文");
+            System.out.println("hello world");
         }
     }
 

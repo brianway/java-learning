@@ -21,6 +21,7 @@
 - [java-container](/java-container):容器类模块的 Java 源码
 - [java-io](/java-io):IO 模块的 Java 源码
 - [java-jvm](/java-jvm): JVM 模块的 Java 源码
+- [java-design](/java-design): Java 设计模式模块的源码
 - [java8](/java8): Java 8 模块的源码
 
 

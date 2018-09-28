@@ -24,6 +24,8 @@ public class DirList {
                 }
             });
         }
+
+        if (list == null) return;
         Arrays.sort(list, String.CASE_INSENSITIVE_ORDER);
         for (String dirItem : list) {
             System.out.println(dirItem);

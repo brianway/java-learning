@@ -94,7 +94,7 @@ public class TextFile extends ArrayList<String> {
         TextFile text = new TextFile(parent + "/text.txt");
         text.write(parent + "test2.txt");
         // Break into unique sorted list of words:
-        TreeSet<String> words = new TreeSet<String>(
+        TreeSet<String> words = new TreeSet<>(
                 new TextFile(inFileName, "\\W+"));
         // Display the capitalized words:
         System.out.println(words.headSet("a"));

@@ -1,4 +1,4 @@
-package com.brianway.learning.java.nio;
+package com.brianway.learning.java.nio.example;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

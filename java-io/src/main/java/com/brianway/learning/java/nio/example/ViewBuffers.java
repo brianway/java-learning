@@ -1,4 +1,4 @@
-package com.brianway.learning.java.nio;//: io/ViewBuffers.java
+package com.brianway.learning.java.nio.example;//: io/ViewBuffers.java
 
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;

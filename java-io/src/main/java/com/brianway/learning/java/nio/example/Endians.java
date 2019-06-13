@@ -1,4 +1,4 @@
-package com.brianway.learning.java.nio;
+package com.brianway.learning.java.nio.example;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

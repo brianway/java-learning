@@ -26,7 +26,6 @@ public class BufferDemo {
 
             //make buffer ready for read
             buf.flip();
-
             while (buf.hasRemaining()) {
                 // read 1 byte at a time
                 System.out.print((char) buf.get());

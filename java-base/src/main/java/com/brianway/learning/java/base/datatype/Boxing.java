@@ -29,7 +29,7 @@ public class Boxing {
 
 /*
 输出：               原因:
-true                自动装箱,缓存
+false               自动装箱,缓存
 false               自动装箱,未缓存
 true
 true                调用 equals(),比较的是值,而不是对象地址

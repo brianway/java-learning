@@ -26,7 +26,7 @@
 - 静态代理：由程序员创建代理类或特定工具自动生成源代码再对其编译，也就是说在程序运行前代理类的.class文件就已经存在。
 - 动态代理：在程序运行时运用反射机制动态创建生成。
 
-![代理架构图](http://7xph6d.com1.z0.glb.clouddn.com/javaSE_%E4%BB%A3%E7%90%86%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
+![代理架构图](/blogs/img/javaSE_%E4%BB%A3%E7%90%86%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
 *紫色箭头代表类的继承关系，红色连线表示调用关系*
 
@@ -241,7 +241,7 @@ com.sun.proxy.$Proxy0
 
 代理类创建时需要传入一个InvocationHandler对象，client调用代理类，代理类的相应方法调用InvocationHandler的的invoke方法，InvocationHandler的invoke方法(可在其中加入日志记录、时间统计等附加功能)再找目标类的相应方法。
 
-![动态代理的工作原理图](http://7xph6d.com1.z0.glb.clouddn.com/javaSE_%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%9B%BE.jpg)
+![动态代理的工作原理图](/blogs/img/javaSE_%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%9B%BE.jpg)
 
 ### 面向切面编程
 

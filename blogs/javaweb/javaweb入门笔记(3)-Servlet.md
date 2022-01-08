@@ -69,7 +69,7 @@ public class FirstServlet extends GenericServlet{
 
 时序图
 
-![servlet的调用过程和生命周期](http://7xph6d.com1.z0.glb.clouddn.com/javaweb_servlet-lifecycle.png)
+![servlet的调用过程和生命周期](/blogs/img/javaweb_servlet-lifecycle.png)
 
 
 ## servlet开发的一些细节
@@ -79,7 +79,7 @@ public class FirstServlet extends GenericServlet{
 - **通配符**:`<servlet-mapping>`的`<url-pattern>`可以使用通配符，两种固定格式：`*.扩展名`；以`/`开头，以`/*`结尾
 
 
-![javaweb_servlet-url匹配.png](http://7xph6d.com1.z0.glb.clouddn.com/javaweb_servlet-url%E5%8C%B9%E9%85%8D.png)
+![javaweb_servlet-url匹配.png](/blogs/img/javaweb_servlet-url%E5%8C%B9%E9%85%8D.png)
 
 - **对象**:servlet由servlet引擎调用，不能独立运行。客户端多次请求，服务器只创建一个servlet实例，之后驻留内存中继续服务直至web容器退出才销毁它。
 - **请求**:服务器针对客户端的每一次请求都会创建新的`request`和`response`对象(它们的生命周期很短)，传给`service`方法。

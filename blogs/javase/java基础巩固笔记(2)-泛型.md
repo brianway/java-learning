@@ -177,7 +177,7 @@ Error:(17, 29) java: 不兼容的类型: 推断类型不符合上限
 ```
 
 但是有一点没搞清楚，我在IDEA里面单步调试，发现结果如下图：
-![泛型调试截图-1](http://7xph6d.com1.z0.glb.clouddn.com/javaSE_%E6%B3%9B%E5%9E%8B%E8%B0%83%E8%AF%95%E6%88%AA%E5%9B%BE-1.png)
+![泛型调试截图-1](/blogs/img/javaSE_%E6%B3%9B%E5%9E%8B%E8%B0%83%E8%AF%95%E6%88%AA%E5%9B%BE-1.png)
 不知道b为什么是Double类型的（但直接`Double b`接收返回值会编译报错）。不知道跟IDE有没有关系，是不是IDE在debug时会显示这个对象最精确的类型？
 
 

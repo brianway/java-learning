@@ -62,7 +62,7 @@ Exception in thread "main" java.lang.NullPointerException
 ## 类加载器的委托机制
 类加载器的树状图
 
-![类加载器](http://7xph6d.com1.z0.glb.clouddn.com/javaSE_%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8%E7%BB%93%E6%9E%84%E5%9B%BE.png)
+![类加载器](/blogs/img/javaSE_%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8%E7%BB%93%E6%9E%84%E5%9B%BE.png)
 
 
 一般加载类的顺序：

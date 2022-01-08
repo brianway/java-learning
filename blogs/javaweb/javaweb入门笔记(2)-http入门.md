@@ -48,7 +48,7 @@
 
 ### 响应状态行
 
-![HTTP响应状态码简表](http://7xph6d.com1.z0.glb.clouddn.com/javaweb_HttpResponseStatus.png)
+![HTTP响应状态码简表](/blogs/img/javaweb_HttpResponseStatus.png)
 
 详情可参考
 

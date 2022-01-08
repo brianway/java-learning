@@ -91,7 +91,7 @@ mail---------------------------Web应用所在目录
 
 ## Tomcat体系结构
 
-![Tomcat体系结构](http://7xph6d.com1.z0.glb.clouddn.com/javaweb_tomcat%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.png)
+![Tomcat体系结构](/blogs/img/javaweb_tomcat%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.png)
 
 
 

@@ -63,7 +63,6 @@
 ![支付宝](http://brianway.github.io/assets/images/alipay_small.png)
 ![微信](http://brianway.github.io/assets/images/wechatpay_small.png)
 
-
 # TODO
 
 计划将这个仓库进行重构，逐步扩充并实现下面的功能。

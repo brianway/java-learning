@@ -60,8 +60,8 @@
 
 如果您觉得该项目对您有帮助，请扫描下方二维码对我进行鼓励，以便我更好的维护和更新，谢谢支持！
 
-![支付宝](http://brianway.github.io/assets/images/alipay_small.png)
-![微信](http://brianway.github.io/assets/images/wechatpay_small.png)
+![支付宝](https://brianway.github.io/img/alipay_small.png)
+![微信](https://brianway.github.io/img/wechatpay_small.png)
 
 # TODO
 

@@ -19,7 +19,8 @@ public class TaskB {
                 getData2 = privateGetData2;
                 //System.out.println("切换到线程end："+Thread.currentThread().getName());
             }
-
+            
+            // 不在同步代码块内打印值，值有可能在打印前被另一条线程更改。
             System.out.println(getData1);
             System.out.println(getData2);
             System.out.println("end task");
